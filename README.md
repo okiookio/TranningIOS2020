@@ -1,2 +1,3 @@
 # TranningIOS2020
-For Toi
+
+Project TBExample : UITableView, Closure , Protocols and delegate, edit Cell

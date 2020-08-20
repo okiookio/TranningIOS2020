@@ -1,0 +1,17 @@
+
+Todo
+
+Start: Aug 19th, 2020
+
+End: 11:00 am, Aug 19th, 2020
+1) Hoàn thành giao diện
+2) Rename : FN+Feature+ClassSuper
+3) Pull to refresh
+
+End: 5:00 pm, Aug 19th, 2020
+4) Unhighlight for complete open notice
+
+Research:
+Enum
+Protocol / Delegate
+UITableView Dynamic height

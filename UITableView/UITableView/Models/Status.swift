@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum Status{
+enum Status {
     case fb
     case likefb
     case populer
-    
-    var text : String {
+
+    var text: String {
         switch self {
         case .fb:
             return "Bạn bè facebook"
