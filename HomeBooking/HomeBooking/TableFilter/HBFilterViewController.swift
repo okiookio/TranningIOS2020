@@ -44,9 +44,13 @@ class HBFilterViewController: UIViewController {
     }
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var applyButton: UIButton!
 
     private var filterData = HBFilter()
-    
+    func setFilter(_ filter : HBFilter) {
+        self.filterData = filter
+    }
+
     var updateFilter: ((_ filter: HBFilter) -> Void)?
 
     override func viewDidLoad() {
@@ -54,11 +58,11 @@ class HBFilterViewController: UIViewController {
 
         tableView.register(UINib(nibName: "SelectedTableViewCell", bundle: nil), forCellReuseIdentifier: "SelectedTableViewCell")
         tableView.register(UINib(nibName: "SwichTableViewCell", bundle: nil), forCellReuseIdentifier: "SwichTableViewCell")
-
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.dataSource = self
         tableView.delegate = self
 
-
+        applyButton.layer.cornerRadius = 10
     }
 
 
@@ -144,7 +148,7 @@ extension HBFilterViewController: UITableViewDataSource {
             cell.didTounchButton = { [weak self] in
                 let type = Int.random(from: 0, to: 2)
                 let msg = HBHotelFilterType(rawValue: type)?.text
-                self?.showAlert(with: "Type", message: msg , okAction: {
+                self?.showAlert(with: "Type", message: msg, okAction: {
                     self?.filterData.type = type
                     tableView.reloadData()
                 }, cancelAction: nil)
@@ -153,13 +157,15 @@ extension HBFilterViewController: UITableViewDataSource {
         case .breakfartIncluded:
             let cell: SwichTableViewCell = tableView.dequeueReusableCell(withIdentifier: "SwichTableViewCell", for: indexPath) as! SwichTableViewCell
             cell.bindType(HBFilterCellType.breakfartIncluded)
-            cell.didTouchSwitch =  { [weak self] (isOn) in
+            cell.bindData(filterData.displayBreakfast())
+            cell.didTouchSwitch = { [weak self] (isOn) in
                 self?.filterData.breakfastIncluted = isOn
             }
             return cell
         case .deals:
             let cell: SwichTableViewCell = tableView.dequeueReusableCell(withIdentifier: "SwichTableViewCell", for: indexPath) as! SwichTableViewCell
             cell.bindType(HBFilterCellType.deals)
+            cell.bindData(filterData.dispalyDeals())
             cell.didTouchSwitch = { [weak self] (isOn) in
                 self?.filterData.deals = isOn
             }
@@ -167,9 +173,11 @@ extension HBFilterViewController: UITableViewDataSource {
         case .onlyShowAvailable:
             let cell: SwichTableViewCell = tableView.dequeueReusableCell(withIdentifier: "SwichTableViewCell", for: indexPath) as! SwichTableViewCell
             cell.bindType(HBFilterCellType.onlyShowAvailable)
+            cell.bindData(filterData.displayOnlyShowAvailable())
             cell.didTouchSwitch = { [weak self] (isOn) in
                 self?.filterData.onlyShowAvailable = isOn
             }
+
             return cell
         }
     }

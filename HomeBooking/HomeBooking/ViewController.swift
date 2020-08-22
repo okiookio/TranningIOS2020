@@ -52,6 +52,8 @@ class ViewController: UIViewController {
 
     @IBAction func goToTableFilter(_ sender: Any) {
         let hbFilterViewController = HBFilterViewController()
+        let filter = HBFilter(yourBudget: "Budget to you", startRating: 5, reviewScore: 3, meals: "ABC", breakfastIncluted: true, deals: false, onlyShowAvailable: true, type: 8)
+        hbFilterViewController.setFilter(filter)
         hbFilterViewController.updateFilter = { [weak self] (data) in
             print(data)
         }

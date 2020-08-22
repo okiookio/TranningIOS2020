@@ -31,12 +31,10 @@ class SwichTableViewCell: UITableViewCell {
         titleLabelViewCell.text = type?.title
     }
     
-    func bindData(_ dataCell : Bool) {
-        if dataCell {
-            buttonSwitch.isOn = true
-        }else{
-            buttonSwitch.isOn = false
-        }
+    func bindData(_ dataCell : Any?) {
+        guard let state = dataCell as? Bool else { return }
+        buttonSwitch.isOn = state
+        
     }
     
     @IBAction func didSwitchButton(_ sender: UISwitch) {

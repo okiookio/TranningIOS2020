@@ -1,0 +1,20 @@
+//
+//  HoangKimtoiStudy.txt
+//  HomeBooking
+//
+//  Created by helIgate on 8/22/20.
+//  Copyright © 2020 helIgate. All rights reserved.
+//
+
+1, Học được cách sử dụng sourceTree và git
+2, Xây dựng tableView gồm nhiều cell có kiểu khác nhau
+3, Cách sử dụng ? và !
+4, Cách tư duy thực hiện từng bước khi làm việc
+5, biến là gì ? và cách hệ thống quản lý biến bên trong bộ nhớ.
+6, Gửi và nhận dữ liệu từ màn hình ngoài vào tableViewCell và lấy ngược lại dữ liệu truyền ra màn hình khác
+7, Sử dụng UISwitch
+8, Xây dựng được màn hình và một số chức năng trong màn hình Filter của ứng dụng Hotel Booking sử dụng : UITableView và UIScrollView
+
+
+
+

@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HBFilterViewController" customModule="HomeBooking" customModuleProvider="target">
             <connections>
+                <outlet property="applyButton" destination="h8v-EF-tQ9" id="JSc-qL-2pf"/>
                 <outlet property="tableView" destination="pq1-Iq-nXg" id="1gZ-eg-asQ"/>
                 <outlet property="view" destination="bvE-S0-EoD" id="uSx-Ms-rAx"/>
             </connections>
@@ -28,7 +29,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="70" id="rAb-g8-3Lb"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                     <state key="normal" title="Apply">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
