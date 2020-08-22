@@ -1,0 +1,27 @@
+//
+//  Todo.txt
+//  HomeBooking
+//
+//  Created by helIgate on 8/21/20.
+//  Copyright © 2020 helIgate. All rights reserved.
+//
+
+import Foundation
+
+start 1:00 PM
+1, send back data
+2, bind data to Filter
+
+end : 2:00 PM
+
+
+
+
+
+
+1, Hiển thị data lên cell
+- nhấn vào button
+- show alert random data
+- lấy data từ alert hiển thị lên content label
+2, Nhấn Apply print mà hình chính
+
