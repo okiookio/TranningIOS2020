@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BA972A524F213E300419967 /* HBCheckout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA972A424F213E300419967 /* HBCheckout.storyboard */; };
+		2BA972A724F2140200419967 /* HBCheckout1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972A624F2140200419967 /* HBCheckout1ViewController.swift */; };
+		2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */; };
+		2BA972AC24F2172400419967 /* Checkout1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA972AA24F2172400419967 /* Checkout1TableViewCell.xib */; };
+		2BA972AE24F21C0C00419967 /* HBCheckoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972AD24F21C0C00419967 /* HBCheckoutModel.swift */; };
 		2BE8849924F1230400DCAF8C /* HoangKimtoiStudy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE8849824F1230400DCAF8C /* HoangKimtoiStudy.txt */; };
 		2BEA194124EF611C00A26CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA194024EF611C00A26CF9 /* AppDelegate.swift */; };
 		2BEA194324EF611C00A26CF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA194224EF611C00A26CF9 /* SceneDelegate.swift */; };
@@ -28,6 +33,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BA972A424F213E300419967 /* HBCheckout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBCheckout.storyboard; sourceTree = "<group>"; };
+		2BA972A624F2140200419967 /* HBCheckout1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckout1ViewController.swift; sourceTree = "<group>"; };
+		2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout1TableViewCell.swift; sourceTree = "<group>"; };
+		2BA972AA24F2172400419967 /* Checkout1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Checkout1TableViewCell.xib; sourceTree = "<group>"; };
+		2BA972AD24F21C0C00419967 /* HBCheckoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckoutModel.swift; sourceTree = "<group>"; };
 		2BE8849824F1230400DCAF8C /* HoangKimtoiStudy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = HoangKimtoiStudy.txt; sourceTree = "<group>"; };
 		2BEA193D24EF611C00A26CF9 /* HomeBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEA194024EF611C00A26CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +71,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BA972A324F213A900419967 /* TableViewCheckout */ = {
+			isa = PBXGroup;
+			children = (
+				2BA972A824F216EF00419967 /* CheckoutTableViewCell */,
+				2BA972A424F213E300419967 /* HBCheckout.storyboard */,
+				2BA972A624F2140200419967 /* HBCheckout1ViewController.swift */,
+			);
+			path = TableViewCheckout;
+			sourceTree = "<group>";
+		};
+		2BA972A824F216EF00419967 /* CheckoutTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */,
+				2BA972AA24F2172400419967 /* Checkout1TableViewCell.xib */,
+			);
+			path = CheckoutTableViewCell;
+			sourceTree = "<group>";
+		};
 		2BEA193424EF611C00A26CF9 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +111,7 @@
 		2BEA193F24EF611C00A26CF9 /* HomeBooking */ = {
 			isa = PBXGroup;
 			children = (
+				2BA972A324F213A900419967 /* TableViewCheckout */,
 				2BEA196024EFCA0500A26CF9 /* TableFilter */,
 				2BEA195924EF66A900A26CF9 /* Filter */,
 				2BEA195424EF618E00A26CF9 /* Models */,
@@ -101,6 +131,7 @@
 			children = (
 				2BEA195524EF61B300A26CF9 /* HBFilter.swift */,
 				2BEA197124EFD0B200A26CF9 /* SampleData.swift */,
+				2BA972AD24F21C0C00419967 /* HBCheckoutModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,9 +224,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BA972A524F213E300419967 /* HBCheckout.storyboard in Resources */,
 				2BEA196E24EFCAD300A26CF9 /* SwichTableViewCell.xib in Resources */,
 				2BEA195F24EF8C9700A26CF9 /* Todo.txt in Resources */,
 				2BEA196A24EFCAAF00A26CF9 /* SelectedTableViewCell.xib in Resources */,
+				2BA972AC24F2172400419967 /* Checkout1TableViewCell.xib in Resources */,
 				2BEA194D24EF611F00A26CF9 /* LaunchScreen.storyboard in Resources */,
 				2BEA194A24EF611F00A26CF9 /* Assets.xcassets in Resources */,
 				2BEA195D24EF66EB00A26CF9 /* FilterViewController.xib in Resources */,
@@ -216,10 +249,13 @@
 				2BEA195624EF61B300A26CF9 /* HBFilter.swift in Sources */,
 				2BEA194124EF611C00A26CF9 /* AppDelegate.swift in Sources */,
 				2BEA194324EF611C00A26CF9 /* SceneDelegate.swift in Sources */,
+				2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */,
 				2BEA196D24EFCAD300A26CF9 /* SwichTableViewCell.swift in Sources */,
 				2BEA196924EFCAAF00A26CF9 /* SelectedTableViewCell.swift in Sources */,
 				2BEA196324EFCA3A00A26CF9 /* HBFilterViewController.swift in Sources */,
 				2BEA197224EFD0B200A26CF9 /* SampleData.swift in Sources */,
+				2BA972AE24F21C0C00419967 /* HBCheckoutModel.swift in Sources */,
+				2BA972A724F2140200419967 /* HBCheckout1ViewController.swift in Sources */,
 				2BEA195C24EF66EB00A26CF9 /* FilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

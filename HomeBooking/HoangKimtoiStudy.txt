@@ -5,6 +5,13 @@
 //  Created by helIgate on 8/22/20.
 //  Copyright © 2020 helIgate. All rights reserved.
 //
+- Aug 23, 2020
+1, Học được cách sử dụng UITextFiel
+2, Xây dựng được màn Checkout1 của ứng dụng Hotel Booking
+3, Nhận và hiển thị dử liệu từ ngoài vào, truyền dữ liệu từ màn Checkout1 ra ngoài
+
+
+- Aug 22, 2020
 
 1, Học được cách sử dụng sourceTree và git
 2, Xây dựng tableView gồm nhiều cell có kiểu khác nhau

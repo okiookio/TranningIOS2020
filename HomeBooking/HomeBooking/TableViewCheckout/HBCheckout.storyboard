@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x0n-IR-4nv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Checkout1 View Controller-->
+        <scene sceneID="laA-TD-E3O">
+            <objects>
+                <viewController storyboardIdentifier="HBCheckout1" id="x0n-IR-4nv" customClass="HBCheckout1ViewController" customModule="HomeBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zPV-UR-Dy3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6BF-sx-f3n">
+                                <rect key="frame" x="0.0" y="44" width="414" height="716"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE0-Ol-nrq">
+                                <rect key="frame" x="28" y="760" width="358" height="70"/>
+                                <color key="backgroundColor" name="orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="QP6-lL-07B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Go to Payment">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTouchGoToPayment:" destination="x0n-IR-4nv" eventType="touchUpInside" id="jDx-kr-rKK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DE0-Ol-nrq" secondAttribute="trailing" constant="8" id="09B-qa-lq5"/>
+                            <constraint firstItem="euc-LH-e2J" firstAttribute="bottom" secondItem="DE0-Ol-nrq" secondAttribute="bottom" constant="32" id="3k4-wM-DaT"/>
+                            <constraint firstItem="6BF-sx-f3n" firstAttribute="top" secondItem="euc-LH-e2J" secondAttribute="top" id="4C8-Qq-OJZ"/>
+                            <constraint firstItem="DE0-Ol-nrq" firstAttribute="leading" secondItem="zPV-UR-Dy3" secondAttribute="leadingMargin" constant="8" id="JKl-Co-5uM"/>
+                            <constraint firstItem="6BF-sx-f3n" firstAttribute="leading" secondItem="euc-LH-e2J" secondAttribute="leading" id="NIo-na-s9K"/>
+                            <constraint firstItem="DE0-Ol-nrq" firstAttribute="top" secondItem="6BF-sx-f3n" secondAttribute="bottom" id="TMN-bY-AHq"/>
+                            <constraint firstItem="euc-LH-e2J" firstAttribute="trailing" secondItem="6BF-sx-f3n" secondAttribute="trailing" id="Uho-yd-yW5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="euc-LH-e2J"/>
+                    </view>
+                    <connections>
+                        <outlet property="goToPaymentButton" destination="DE0-Ol-nrq" id="R4j-g7-sN8"/>
+                        <outlet property="tableView" destination="6BF-sx-f3n" id="U8K-oe-VDm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5g9-oc-vd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="orange">
+            <color red="0.97254901960784312" green="0.63137254901960782" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

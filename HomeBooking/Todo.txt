@@ -6,7 +6,11 @@
 //  Copyright © 2020 helIgate. All rights reserved.
 //
 
-import Foundation
+- Aug 24, 2020
+1,Làm thêm một màn hình trong ứng dụng hotel booking
+
+
+
 
 start 1:00 PM
 1, send back data

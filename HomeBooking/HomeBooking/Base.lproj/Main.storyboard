@@ -33,13 +33,23 @@
                                     <action selector="goToTableFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3I-Yq-clQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pz8-tz-opX">
+                                <rect key="frame" x="33" y="117" width="66" height="30"/>
+                                <state key="normal" title="Checkout"/>
+                                <connections>
+                                    <action selector="goToCheckout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9w-M6-gUa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Ir7-Z3-vbS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="182" id="3F5-d5-Yd5"/>
+                            <constraint firstItem="Pz8-tz-opX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="5np-Of-kvw"/>
+                            <constraint firstItem="Pz8-tz-opX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="KBh-Ge-f6H"/>
                             <constraint firstItem="gks-kM-3TI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kwk-bp-f7c"/>
                             <constraint firstItem="Ir7-Z3-vbS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="nTi-d6-MH2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ir7-Z3-vbS" secondAttribute="trailing" constant="182" id="qdY-fm-YUK"/>
+                            <constraint firstItem="Ir7-Z3-vbS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w6S-lv-VG1"/>
                             <constraint firstItem="gks-kM-3TI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zFi-nP-rLm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

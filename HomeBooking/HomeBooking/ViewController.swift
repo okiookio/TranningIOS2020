@@ -59,5 +59,15 @@ class ViewController: UIViewController {
         }
         navigationController?.pushViewController(hbFilterViewController, animated: true)
     }
+    @IBAction func goToCheckout(_ sender: UIButton){
+        let storybroad : UIStoryboard = UIStoryboard(name: "HBCheckout", bundle: nil)
+        let hbcheckout1ViewController = storybroad.instantiateViewController(withIdentifier: "HBCheckout1") as! HBCheckout1ViewController
+        hbcheckout1ViewController.updateCheckout = { [weak self] (checkout) in
+            print(checkout)
+        }
+        let checkout = HBCheckoutModel(fistName: "Hoang", lastName: "Kim", emailAddress: "Toi", address: "1", postCode: "2", country: "3", mobile: "4")
+        hbcheckout1ViewController.bindDataCheckout(checkout)
+        navigationController?.pushViewController(hbcheckout1ViewController, animated: true)
+    }
 }
 
