@@ -6,7 +6,7 @@
 //  Copyright © 2020 helIgate. All rights reserved.
 //
 - Aug 23, 2020
-1, Học được cách sử dụng UITextFiel
+1, Học được cách sử dụng UITextField
 2, Xây dựng được màn Checkout1 của ứng dụng Hotel Booking
 3, Nhận và hiển thị dử liệu từ ngoài vào, truyền dữ liệu từ màn Checkout1 ra ngoài
 
