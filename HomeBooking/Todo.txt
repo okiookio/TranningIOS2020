@@ -6,6 +6,9 @@
 //  Copyright © 2020 helIgate. All rights reserved.
 //
 
+- Aug 26, 2020
+1, Hoàn thành giao diện checkout2
+
 - Aug 24, 2020
 1, UITextFiels :
 + color placeholder

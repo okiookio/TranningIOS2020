@@ -8,8 +8,9 @@
 
 import UIKit
 
+
 class Checkout1TableViewCell: UITableViewCell {
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var textField: UIPaddingTextField!
 
     var didEndEditAction: ((String) -> ())?
 
@@ -18,12 +19,17 @@ class Checkout1TableViewCell: UITableViewCell {
         // Initialization code
         textField.delegate = self
         textField.layer.cornerRadius = 10
-        textField.layer.opacity = 0.3
+
+        textField.padding = .init(top: 0, left: 16, bottom: 0, right: 16)
 
     }
 
-    func bindPlaceholder(_ title: String) {
-        textField.placeholder = title
+    func bindPlaceholder(_ placeholder: String) {
+        
+        textField.placeholder = placeholder
+        textField.setPlaceHolderColor(UIColor.gray)
+
+        //placeholder co mau
     }
 
     func bindData(_ text: Any?) {
@@ -31,12 +37,6 @@ class Checkout1TableViewCell: UITableViewCell {
         textField.text = text as? String
 
 
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }
@@ -48,5 +48,15 @@ extension Checkout1TableViewCell: UITextFieldDelegate {
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
         didEndEditAction?(textField.text ?? "")
+    }
+}
+
+extension UITextField {
+    func setPlaceHolderColor(_ color: UIColor) {
+        guard let placeholder = self.placeholder,
+            let font = self.font else { return }
+        let attributes: [NSAttributedString.Key: Any] = [NSAttributedString.Key.foregroundColor: color, NSAttributedString.Key.font: font]
+        let attributedString = NSAttributedString(string: placeholder, attributes: attributes)
+        self.attributedPlaceholder = attributedString
     }
 }

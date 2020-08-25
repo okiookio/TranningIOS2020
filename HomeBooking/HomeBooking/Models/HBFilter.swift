@@ -83,6 +83,21 @@ extension String {
 
         return result
     }
+    
+    func isEmail() -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: self)
+    }
+    
+    func isNumber() -> Bool {
+        
+        return Int(self) != nil
+        
+        // int la nil thi return false
+        // con lai return true
+    }
 }
 
 extension Int {

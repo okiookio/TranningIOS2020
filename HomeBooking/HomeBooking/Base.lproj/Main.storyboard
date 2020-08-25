@@ -15,19 +15,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir7-Z3-vbS">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir7-Z3-vbS">
                                 <rect key="frame" x="182" y="123" width="50" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="8ve-Ca-aRS"/>
-                                    <constraint firstAttribute="width" constant="50" id="PzN-y3-GeM"/>
-                                </constraints>
                                 <state key="normal" title="Filter"/>
                                 <connections>
                                     <action selector="goToFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WPl-N9-qMU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gks-kM-3TI">
-                                <rect key="frame" x="169.5" y="433" width="75" height="30"/>
+                                <rect key="frame" x="319" y="123" width="75" height="30"/>
                                 <state key="normal" title="Filter Table"/>
                                 <connections>
                                     <action selector="goToTableFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3I-Yq-clQ"/>
@@ -40,17 +36,38 @@
                                     <action selector="goToCheckout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9w-M6-gUa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI6-2i-NsA">
+                                <rect key="frame" x="50" y="209" width="33" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="iKG-I8-p7n"/>
+                                </constraints>
+                                <state key="normal" title="User"/>
+                                <connections>
+                                    <action selector="goToUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iSo-Kq-afQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlN-fB-dJS">
+                                <rect key="frame" x="144" y="222" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Checkout2"/>
+                                <connections>
+                                    <action selector="goToCheckout2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FYr-sZ-RZ4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ir7-Z3-vbS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="182" id="3F5-d5-Yd5"/>
-                            <constraint firstItem="Pz8-tz-opX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="5np-Of-kvw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="SI6-2i-NsA" secondAttribute="trailing" constant="331" id="2M2-pg-Z3z"/>
+                            <constraint firstItem="Ir7-Z3-vbS" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Pz8-tz-opX" secondAttribute="trailing" constant="83" id="2Y8-wk-iim"/>
+                            <constraint firstItem="Pz8-tz-opX" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="5np-Of-kvw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ir7-Z3-vbS" secondAttribute="trailing" constant="182" id="8Q3-0Q-kcQ"/>
+                            <constraint firstItem="SI6-2i-NsA" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8iU-g4-i4c"/>
+                            <constraint firstItem="SI6-2i-NsA" firstAttribute="top" secondItem="Pz8-tz-opX" secondAttribute="bottom" constant="62" id="DnU-0X-boc"/>
+                            <constraint firstItem="gks-kM-3TI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="ECe-wM-Mbg"/>
                             <constraint firstItem="Pz8-tz-opX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="KBh-Ge-f6H"/>
-                            <constraint firstItem="gks-kM-3TI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kwk-bp-f7c"/>
-                            <constraint firstItem="Ir7-Z3-vbS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="nTi-d6-MH2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ir7-Z3-vbS" secondAttribute="trailing" constant="182" id="qdY-fm-YUK"/>
-                            <constraint firstItem="Ir7-Z3-vbS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w6S-lv-VG1"/>
-                            <constraint firstItem="gks-kM-3TI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zFi-nP-rLm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gks-kM-3TI" secondAttribute="trailing" constant="20" id="ayl-8C-o4A"/>
+                            <constraint firstItem="gks-kM-3TI" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ir7-Z3-vbS" secondAttribute="trailing" constant="87" id="vLL-I5-BFT"/>
+                            <constraint firstItem="Ir7-Z3-vbS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="yT3-1a-to8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

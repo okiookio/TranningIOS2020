@@ -5,6 +5,16 @@
 //  Created by helIgate on 8/22/20.
 //  Copyright © 2020 helIgate. All rights reserved.
 //
+
+
+- Aug 25, 2020
+1, Xây dựng màn hình user
+2, Hoàn thành màn hình checkout1
+3, Học cài đặt thư viện bằng pods
+4, Custom UITextField
+
+
+
 - Aug 23, 2020
 1, Học được cách sử dụng UITextField
 2, Xây dựng được màn Checkout1 của ứng dụng Hotel Booking

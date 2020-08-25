@@ -9,6 +9,7 @@
 import UIKit
 
 class HBCheckout1ViewController: UIViewController {
+    
     enum HBCheckoutField: Int, CaseIterable {
         case firstName
         case lastName
@@ -38,13 +39,12 @@ class HBCheckout1ViewController: UIViewController {
         }
 
     }
+    
     @IBOutlet weak var goToPaymentButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     private var checkoutData = HBCheckoutModel()
-    func bindDataCheckout(_ data : HBCheckoutModel) {
-        self.checkoutData = data
-    }
-    var updateCheckout : ((_ checkout : HBCheckoutModel)->Void)?
+    var updateCheckout: ((_ checkout: HBCheckoutModel) -> Void)?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,16 +52,22 @@ class HBCheckout1ViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         tableView.register(UINib(nibName: "Checkout1TableViewCell", bundle: nil), forCellReuseIdentifier: "Checkout1TableViewCell")
+        tableView.register(UINib(nibName: "HBInputNumberTableViewCell", bundle: nil), forCellReuseIdentifier: "HBInputNumberTableViewCell")
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.delegate = self
         tableView.dataSource = self
         goToPaymentButton.layer.cornerRadius = 10
     }
+    
     @IBAction func didTouchGoToPayment(_ sender: UIButton) {
         self.updateCheckout?(checkoutData)
         navigationController?.popViewController(animated: true)
     }
     
+    func bindDataCheckout(_ data: HBCheckoutModel) {
+        self.checkoutData = data
+    }
+
 }
 
 extension HBCheckout1ViewController: UITableViewDataSource {
@@ -70,7 +76,7 @@ extension HBCheckout1ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         guard let row = HBCheckoutField(rawValue: indexPath.row) else { return UITableViewCell() }
         switch row {
         case .firstName:
@@ -78,7 +84,13 @@ extension HBCheckout1ViewController: UITableViewDataSource {
             cell.bindPlaceholder(HBCheckoutField.firstName.getText)
             cell.bindData(self.checkoutData.fistName)
             cell.didEndEditAction = { [weak self] (text) in
-                self?.checkoutData.fistName = text
+                if text.isEmpty {
+                    cell.textField.layer.borderWidth = 1.0
+                    cell.textField.layer.borderColor = UIColor.red.cgColor
+                } else {
+                    cell.textField.layer.borderWidth = 0.0
+                    self?.checkoutData.fistName = text
+                }
             }
             return cell
         case .lastName:
@@ -87,6 +99,7 @@ extension HBCheckout1ViewController: UITableViewDataSource {
             cell.bindData(self.checkoutData.lastName)
             cell.didEndEditAction = { [weak self] (text) in
                 self?.checkoutData.lastName = text
+                
             }
             return cell
         case .emailAddress:
@@ -94,8 +107,13 @@ extension HBCheckout1ViewController: UITableViewDataSource {
             cell.bindPlaceholder(HBCheckoutField.emailAddress.getText)
             cell.bindData(self.checkoutData.emailAddress)
             cell.didEndEditAction = { [weak self] (text) in
-                self?.checkoutData.emailAddress = text
+                if text.isEmail() {
+                    self?.checkoutData.emailAddress = text
+                } else {
+                    print("\(text) is not email")
+                }
             }
+            cell.textField.keyboardType = .emailAddress
             return cell
         case .address:
             let cell = tableView.dequeueReusableCell(withIdentifier: "Checkout1TableViewCell", for: indexPath) as! Checkout1TableViewCell
@@ -112,6 +130,7 @@ extension HBCheckout1ViewController: UITableViewDataSource {
             cell.didEndEditAction = { [weak self] (text) in
                 self?.checkoutData.postCode = text
             }
+            cell.textField.keyboardType = .numberPad
             return cell
         case .country:
             let cell = tableView.dequeueReusableCell(withIdentifier: "Checkout1TableViewCell", for: indexPath) as! Checkout1TableViewCell
@@ -122,21 +141,27 @@ extension HBCheckout1ViewController: UITableViewDataSource {
             }
             return cell
         case .mobilePhone:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Checkout1TableViewCell", for: indexPath) as! Checkout1TableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HBInputNumberTableViewCell", for: indexPath) as! HBInputNumberTableViewCell
             cell.bindPlaceholder(HBCheckoutField.mobilePhone.getText)
             cell.bindData(self.checkoutData.mobile)
             cell.didEndEditAction = { [weak self] (text) in
                 self?.checkoutData.mobile = text
             }
+            cell.textFieldInputNumber.keyboardType = .phonePad
             return cell
         }
     }
 
 
 }
-extension HBCheckout1ViewController: UITableViewDelegate {
 
+extension HBCheckout1ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        tableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
+
+    }
 }
+
 extension UIViewController
 {
     func setupToHideKeyboardOnTapOnView()

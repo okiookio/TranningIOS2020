@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FR4-gQ-NV6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Asq-tF-sR1">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Asq-tF-sR1" customClass="UIPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
                                 <rect key="frame" x="24" y="8" width="272" height="56"/>
                                 <color key="backgroundColor" name="gray-light"/>
                                 <constraints>
@@ -52,12 +52,12 @@
             <connections>
                 <outlet property="textField" destination="Asq-tF-sR1" id="Tcz-WP-WtS"/>
             </connections>
-            <point key="canvasLocation" x="-111.59420289855073" y="12.388392857142856"/>
+            <point key="canvasLocation" x="-484" y="66"/>
         </tableViewCell>
     </objects>
     <resources>
         <namedColor name="gray-light">
-            <color red="0.87450980392156863" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.87450980392156863" green="0.87058823529411766" blue="0.87058823529411766" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

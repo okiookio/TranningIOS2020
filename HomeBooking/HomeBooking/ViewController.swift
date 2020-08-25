@@ -16,31 +16,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    private func loadData(_ data: HBFilter) {
-        let budget = data.yourBudget
-        var rating = ""
-        if data.startRating == 0 {
-            rating = "true"
-        } else {
-            rating = "false"
-        }
-
-        rating = (data.startRating ?? 0) == 0 ? "true" : "false"
-
-        var viewScore = ""
-        if data.reviewScore == 0 {
-            viewScore = "true"
-        } else {
-            viewScore = "false"
-        }
-        let meals = data.meals
-        let breakfast = data.breakfastIncluted
-        let deals = data.deals
-        let onlyShow = data.onlyShowAvailable
-        print("Your Budget :\(budget), Star Rating : \(rating), Review Score : \(viewScore), Meals :\(meals), Breakfast :\(breakfast) \(deals) \(onlyShow)")
-    }
-
-
     @IBAction func goToFilter(_ sender: Any) {
         let filterViewController = FilterViewController()
         filterViewController.updateFilter = { (data) in
@@ -59,15 +34,25 @@ class ViewController: UIViewController {
         }
         navigationController?.pushViewController(hbFilterViewController, animated: true)
     }
-    @IBAction func goToCheckout(_ sender: UIButton){
-        let storybroad : UIStoryboard = UIStoryboard(name: "HBCheckout", bundle: nil)
+    @IBAction func goToCheckout(_ sender: UIButton) {
+        let storybroad: UIStoryboard = UIStoryboard(name: "HBCheckout", bundle: nil)
         let hbcheckout1ViewController = storybroad.instantiateViewController(withIdentifier: "HBCheckout1") as! HBCheckout1ViewController
         hbcheckout1ViewController.updateCheckout = { [weak self] (checkout) in
             print(checkout)
         }
-        let checkout = HBCheckoutModel(fistName: "Hoang", lastName: "Kim", emailAddress: "Toi", address: "1", postCode: "2", country: "3", mobile: "4")
+        let checkout = HBCheckoutModel()
         hbcheckout1ViewController.bindDataCheckout(checkout)
         navigationController?.pushViewController(hbcheckout1ViewController, animated: true)
+    }
+    @IBAction func goToUser(_ sender: UIButton) {
+        let storybroad: UIStoryboard = UIStoryboard(name: "HBUser", bundle: nil)
+        let hbUserViewController = storybroad.instantiateViewController(identifier: "UserController") as! HBUserViewController
+        navigationController?.pushViewController(hbUserViewController, animated: true)
+    }
+    @IBAction func goToCheckout2(_ sender : UIButton){
+        let storybroad: UIStoryboard = UIStoryboard(name: "HBCheckout2", bundle: nil)
+        let hbCheckout2ViewController = storybroad.instantiateViewController(identifier: "HBCheckout2") as! HBCheckout2ViewController
+        navigationController?.pushViewController(hbCheckout2ViewController, animated: true)
     }
 }
 

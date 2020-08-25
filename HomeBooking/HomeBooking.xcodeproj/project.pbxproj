@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1BB0A024F4A8F00074ED6B /* UIPaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB09F24F4A8F00074ED6B /* UIPaddingTextField.swift */; };
+		2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */; };
+		2B1BB0A824F4B8960074ED6B /* HBInputNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1BB0A624F4B8960074ED6B /* HBInputNumberTableViewCell.xib */; };
+		2B52D7E824F5006700D8FF1A /* HBUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D7E724F5006700D8FF1A /* HBUser.storyboard */; };
+		2B52D7EA24F5008F00D8FF1A /* HBUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52D7E924F5008F00D8FF1A /* HBUserViewController.swift */; };
+		2B52D7EE24F5012F00D8FF1A /* HBUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52D7EC24F5012F00D8FF1A /* HBUserTableViewCell.swift */; };
+		2B52D7EF24F5012F00D8FF1A /* HBUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D7ED24F5012F00D8FF1A /* HBUserTableViewCell.xib */; };
+		2B52D7F324F51F3500D8FF1A /* HBCheckout2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D7F224F51F3500D8FF1A /* HBCheckout2.storyboard */; };
+		2B52D7F724F5210500D8FF1A /* HBCheckout2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52D7F624F5210500D8FF1A /* HBCheckout2ViewController.swift */; };
 		2BA972A524F213E300419967 /* HBCheckout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA972A424F213E300419967 /* HBCheckout.storyboard */; };
 		2BA972A724F2140200419967 /* HBCheckout1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972A624F2140200419967 /* HBCheckout1ViewController.swift */; };
 		2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */; };
@@ -30,9 +39,19 @@
 		2BEA196D24EFCAD300A26CF9 /* SwichTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA196B24EFCAD300A26CF9 /* SwichTableViewCell.swift */; };
 		2BEA196E24EFCAD300A26CF9 /* SwichTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEA196C24EFCAD300A26CF9 /* SwichTableViewCell.xib */; };
 		2BEA197224EFD0B200A26CF9 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA197124EFD0B200A26CF9 /* SampleData.swift */; };
+		6A79EFE02B3D71FE768E9186 /* Pods_HomeBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C72311DA678AF806D2F4A7 /* Pods_HomeBooking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1BB09F24F4A8F00074ED6B /* UIPaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPaddingTextField.swift; sourceTree = "<group>"; };
+		2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBInputNumberTableViewCell.swift; sourceTree = "<group>"; };
+		2B1BB0A624F4B8960074ED6B /* HBInputNumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBInputNumberTableViewCell.xib; sourceTree = "<group>"; };
+		2B52D7E724F5006700D8FF1A /* HBUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBUser.storyboard; sourceTree = "<group>"; };
+		2B52D7E924F5008F00D8FF1A /* HBUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBUserViewController.swift; sourceTree = "<group>"; };
+		2B52D7EC24F5012F00D8FF1A /* HBUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBUserTableViewCell.swift; sourceTree = "<group>"; };
+		2B52D7ED24F5012F00D8FF1A /* HBUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBUserTableViewCell.xib; sourceTree = "<group>"; };
+		2B52D7F224F51F3500D8FF1A /* HBCheckout2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBCheckout2.storyboard; sourceTree = "<group>"; };
+		2B52D7F624F5210500D8FF1A /* HBCheckout2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckout2ViewController.swift; sourceTree = "<group>"; };
 		2BA972A424F213E300419967 /* HBCheckout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBCheckout.storyboard; sourceTree = "<group>"; };
 		2BA972A624F2140200419967 /* HBCheckout1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckout1ViewController.swift; sourceTree = "<group>"; };
 		2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout1TableViewCell.swift; sourceTree = "<group>"; };
@@ -58,6 +77,9 @@
 		2BEA196B24EFCAD300A26CF9 /* SwichTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwichTableViewCell.swift; sourceTree = "<group>"; };
 		2BEA196C24EFCAD300A26CF9 /* SwichTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwichTableViewCell.xib; sourceTree = "<group>"; };
 		2BEA197124EFD0B200A26CF9 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		4079925A0B669B608AA76166 /* Pods-HomeBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeBooking.release.xcconfig"; path = "Target Support Files/Pods-HomeBooking/Pods-HomeBooking.release.xcconfig"; sourceTree = "<group>"; };
+		49C72311DA678AF806D2F4A7 /* Pods_HomeBooking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeBooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E33742F2A8807FF5603DEC05 /* Pods-HomeBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeBooking.debug.xcconfig"; path = "Target Support Files/Pods-HomeBooking/Pods-HomeBooking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +87,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A79EFE02B3D71FE768E9186 /* Pods_HomeBooking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B1BB09E24F4A8CC0074ED6B /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2B1BB09F24F4A8F00074ED6B /* UIPaddingTextField.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2B52D7E624F4FF8A00D8FF1A /* TableViewUser */ = {
+			isa = PBXGroup;
+			children = (
+				2B52D7EB24F500E900D8FF1A /* UserTableViewCell */,
+				2B52D7E724F5006700D8FF1A /* HBUser.storyboard */,
+				2B52D7E924F5008F00D8FF1A /* HBUserViewController.swift */,
+			);
+			path = TableViewUser;
+			sourceTree = "<group>";
+		};
+		2B52D7EB24F500E900D8FF1A /* UserTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2B52D7EC24F5012F00D8FF1A /* HBUserTableViewCell.swift */,
+				2B52D7ED24F5012F00D8FF1A /* HBUserTableViewCell.xib */,
+			);
+			path = UserTableViewCell;
+			sourceTree = "<group>";
+		};
+		2B52D7F024F51F0000D8FF1A /* ScreenCheckout2 */ = {
+			isa = PBXGroup;
+			children = (
+				2B52D7F224F51F3500D8FF1A /* HBCheckout2.storyboard */,
+				2B52D7F624F5210500D8FF1A /* HBCheckout2ViewController.swift */,
+			);
+			path = ScreenCheckout2;
+			sourceTree = "<group>";
+		};
 		2BA972A324F213A900419967 /* TableViewCheckout */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +145,8 @@
 			children = (
 				2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */,
 				2BA972AA24F2172400419967 /* Checkout1TableViewCell.xib */,
+				2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */,
+				2B1BB0A624F4B8960074ED6B /* HBInputNumberTableViewCell.xib */,
 			);
 			path = CheckoutTableViewCell;
 			sourceTree = "<group>";
@@ -97,6 +158,8 @@
 				2BEA195E24EF8C9700A26CF9 /* Todo.txt */,
 				2BEA193F24EF611C00A26CF9 /* HomeBooking */,
 				2BEA193E24EF611C00A26CF9 /* Products */,
+				6275B1C26984A13058823E5D /* Pods */,
+				CA83F81FC98103773334D907 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +174,9 @@
 		2BEA193F24EF611C00A26CF9 /* HomeBooking */ = {
 			isa = PBXGroup;
 			children = (
+				2B52D7F024F51F0000D8FF1A /* ScreenCheckout2 */,
+				2B52D7E624F4FF8A00D8FF1A /* TableViewUser */,
+				2B1BB09E24F4A8CC0074ED6B /* CustomViews */,
 				2BA972A324F213A900419967 /* TableViewCheckout */,
 				2BEA196024EFCA0500A26CF9 /* TableFilter */,
 				2BEA195924EF66A900A26CF9 /* Filter */,
@@ -166,6 +232,23 @@
 			path = FilterTableViewCell;
 			sourceTree = "<group>";
 		};
+		6275B1C26984A13058823E5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E33742F2A8807FF5603DEC05 /* Pods-HomeBooking.debug.xcconfig */,
+				4079925A0B669B608AA76166 /* Pods-HomeBooking.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA83F81FC98103773334D907 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49C72311DA678AF806D2F4A7 /* Pods_HomeBooking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,9 +256,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BEA195124EF611F00A26CF9 /* Build configuration list for PBXNativeTarget "HomeBooking" */;
 			buildPhases = (
+				FF10B57254D69F8579B5F101 /* [CP] Check Pods Manifest.lock */,
 				2BEA193924EF611C00A26CF9 /* Sources */,
 				2BEA193A24EF611C00A26CF9 /* Frameworks */,
 				2BEA193B24EF611C00A26CF9 /* Resources */,
+				A09033CD823D39C39A79D6E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BA972A524F213E300419967 /* HBCheckout.storyboard in Resources */,
+				2B1BB0A824F4B8960074ED6B /* HBInputNumberTableViewCell.xib in Resources */,
 				2BEA196E24EFCAD300A26CF9 /* SwichTableViewCell.xib in Resources */,
 				2BEA195F24EF8C9700A26CF9 /* Todo.txt in Resources */,
 				2BEA196A24EFCAAF00A26CF9 /* SelectedTableViewCell.xib in Resources */,
@@ -232,30 +318,80 @@
 				2BEA194D24EF611F00A26CF9 /* LaunchScreen.storyboard in Resources */,
 				2BEA194A24EF611F00A26CF9 /* Assets.xcassets in Resources */,
 				2BEA195D24EF66EB00A26CF9 /* FilterViewController.xib in Resources */,
+				2B52D7F324F51F3500D8FF1A /* HBCheckout2.storyboard in Resources */,
 				2BEA196424EFCA3A00A26CF9 /* HBFilterViewController.xib in Resources */,
 				2BE8849924F1230400DCAF8C /* HoangKimtoiStudy.txt in Resources */,
+				2B52D7E824F5006700D8FF1A /* HBUser.storyboard in Resources */,
+				2B52D7EF24F5012F00D8FF1A /* HBUserTableViewCell.xib in Resources */,
 				2BEA194824EF611C00A26CF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A09033CD823D39C39A79D6E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeBooking/Pods-HomeBooking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeBooking/Pods-HomeBooking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeBooking/Pods-HomeBooking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF10B57254D69F8579B5F101 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeBooking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2BEA193924EF611C00A26CF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B52D7EE24F5012F00D8FF1A /* HBUserTableViewCell.swift in Sources */,
 				2BEA194524EF611C00A26CF9 /* ViewController.swift in Sources */,
 				2BEA195624EF61B300A26CF9 /* HBFilter.swift in Sources */,
+				2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */,
 				2BEA194124EF611C00A26CF9 /* AppDelegate.swift in Sources */,
 				2BEA194324EF611C00A26CF9 /* SceneDelegate.swift in Sources */,
+				2B1BB0A024F4A8F00074ED6B /* UIPaddingTextField.swift in Sources */,
 				2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */,
 				2BEA196D24EFCAD300A26CF9 /* SwichTableViewCell.swift in Sources */,
 				2BEA196924EFCAAF00A26CF9 /* SelectedTableViewCell.swift in Sources */,
 				2BEA196324EFCA3A00A26CF9 /* HBFilterViewController.swift in Sources */,
+				2B52D7F724F5210500D8FF1A /* HBCheckout2ViewController.swift in Sources */,
 				2BEA197224EFD0B200A26CF9 /* SampleData.swift in Sources */,
 				2BA972AE24F21C0C00419967 /* HBCheckoutModel.swift in Sources */,
 				2BA972A724F2140200419967 /* HBCheckout1ViewController.swift in Sources */,
+				2B52D7EA24F5008F00D8FF1A /* HBUserViewController.swift in Sources */,
 				2BEA195C24EF66EB00A26CF9 /* FilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +534,7 @@
 		};
 		2BEA195224EF611F00A26CF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E33742F2A8807FF5603DEC05 /* Pods-HomeBooking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -415,6 +552,7 @@
 		};
 		2BEA195324EF611F00A26CF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4079925A0B669B608AA76166 /* Pods-HomeBooking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
