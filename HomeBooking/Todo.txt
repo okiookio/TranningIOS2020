@@ -8,6 +8,15 @@
 
 - Aug 26, 2020
 1, Hoàn thành giao diện checkout2
+- chức năng :
++ validate data
++ i/o data
++ hiện data lên card
+- UI :
++ Hoàn thiện UI
+
+- Tìm hiểu NSUserDefault ( UserDefault )
+- Xây dựng màn notification.
 
 - Aug 24, 2020
 1, UITextFiels :

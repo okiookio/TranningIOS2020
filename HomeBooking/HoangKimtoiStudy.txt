@@ -12,6 +12,9 @@
 2, Hoàn thành màn hình checkout1
 3, Học cài đặt thư viện bằng pods
 4, Custom UITextField
+5, Sử dụng UIScrollView
+6, Tối ưu code UITableView
+7, Tư duy tôi ưu code 
 
 
 
