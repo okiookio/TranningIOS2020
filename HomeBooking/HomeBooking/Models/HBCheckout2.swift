@@ -10,7 +10,7 @@ import Foundation
 
 struct HBCheckout2 {
     var cardNumber : String?
-    var expiry : Date?
+    var expiry : String?
     var cvv : String?
     var name : String?
 }
@@ -19,10 +19,7 @@ extension HBCheckout2 {
         return cardNumber
     }
     func displayExpiry() -> String? {
-        guard let date = expiry else { return "" }
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM-yyyy"
-        return dateFormatter.string(from: date)
+        return expiry
     }
     func displayCVV() -> String? {
         return cvv

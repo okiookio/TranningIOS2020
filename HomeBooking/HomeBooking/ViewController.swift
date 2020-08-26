@@ -49,13 +49,29 @@ class ViewController: UIViewController {
         let hbUserViewController = storybroad.instantiateViewController(identifier: "UserController") as! HBUserViewController
         navigationController?.pushViewController(hbUserViewController, animated: true)
     }
-    @IBAction func goToCheckout2(_ sender : UIButton){
+    @IBAction func goToCheckout2(_ sender: UIButton) {
+//        let storybroad: UIStoryboard = UIStoryboard(name: "HBCheckout2", bundle: nil)
+//        let hbCheckout2ViewController = storybroad.instantiateViewController(identifier: "HBCheckout2") as! HBCheckout2ViewController
+//        hbCheckout2ViewController.didTouchGoToConfirmation = { [weak self] (data) in
+//            print("Data checkout \(data)")
+//        }
+//
+//      let checkout2 = HBCheckout2(cardNumber: "123456778", expiry: Date(), cvv: "123", name: "Hoang kim toi")
+//        hbCheckout2ViewController.setDataCheckout(checkout2)
+//        navigationController?.pushViewController(hbCheckout2ViewController, animated: true)
+//
+        
+        let data = HBCheckout2(cardNumber: "1234 5678 9123 4567", expiry: "08/23", cvv: "123", name: "JONH WICK")
+        goX(data)
+    }
+
+    func goX(_ data: HBCheckout2) {
         let storybroad: UIStoryboard = UIStoryboard(name: "HBCheckout2", bundle: nil)
-        let hbCheckout2ViewController = storybroad.instantiateViewController(identifier: "HBCheckout2") as! HBCheckout2ViewController
-        hbCheckout2ViewController.didTouchGoToConfirmation = { [weak self] (data) in
-            print("Data checkout \(data)")
+        let vc = storybroad.instantiateViewController(identifier: "XViewController") as! XViewController
+        vc.completeWithVisaCard = { [weak self] (card) in
+            print(card)
         }
-        navigationController?.pushViewController(hbCheckout2ViewController, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

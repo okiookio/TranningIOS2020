@@ -24,6 +24,8 @@
 		2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */; };
 		2BA972AC24F2172400419967 /* Checkout1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA972AA24F2172400419967 /* Checkout1TableViewCell.xib */; };
 		2BA972AE24F21C0C00419967 /* HBCheckoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972AD24F21C0C00419967 /* HBCheckoutModel.swift */; };
+		2BD5CC6424F6203200148FF5 /* HBNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5CC6324F6203200148FF5 /* HBNumberTextField.swift */; };
+		2BD5CC6624F6508000148FF5 /* XViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5CC6524F6508000148FF5 /* XViewController.swift */; };
 		2BE8849924F1230400DCAF8C /* HoangKimtoiStudy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE8849824F1230400DCAF8C /* HoangKimtoiStudy.txt */; };
 		2BEA194124EF611C00A26CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA194024EF611C00A26CF9 /* AppDelegate.swift */; };
 		2BEA194324EF611C00A26CF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA194224EF611C00A26CF9 /* SceneDelegate.swift */; };
@@ -63,6 +65,8 @@
 		2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout1TableViewCell.swift; sourceTree = "<group>"; };
 		2BA972AA24F2172400419967 /* Checkout1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Checkout1TableViewCell.xib; sourceTree = "<group>"; };
 		2BA972AD24F21C0C00419967 /* HBCheckoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckoutModel.swift; sourceTree = "<group>"; };
+		2BD5CC6324F6203200148FF5 /* HBNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBNumberTextField.swift; sourceTree = "<group>"; };
+		2BD5CC6524F6508000148FF5 /* XViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XViewController.swift; sourceTree = "<group>"; };
 		2BE8849824F1230400DCAF8C /* HoangKimtoiStudy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = HoangKimtoiStudy.txt; sourceTree = "<group>"; };
 		2BEA193D24EF611C00A26CF9 /* HomeBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BEA194024EF611C00A26CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				2B1BB09F24F4A8F00074ED6B /* HBPaddingTextField.swift */,
 				2B093DBB24F612DF0028820F /* HBTextField.swift */,
 				2B093DB924F612C00028820F /* HBDatePickerTextField.swift */,
+				2BD5CC6324F6203200148FF5 /* HBNumberTextField.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			children = (
 				2B52D7F224F51F3500D8FF1A /* HBCheckout2.storyboard */,
 				2B52D7F624F5210500D8FF1A /* HBCheckout2ViewController.swift */,
+				2BD5CC6524F6508000148FF5 /* XViewController.swift */,
 			);
 			path = ScreenCheckout2;
 			sourceTree = "<group>";
@@ -391,6 +397,8 @@
 				2BEA195624EF61B300A26CF9 /* HBFilter.swift in Sources */,
 				2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */,
 				2BEA194124EF611C00A26CF9 /* AppDelegate.swift in Sources */,
+				2BD5CC6424F6203200148FF5 /* HBNumberTextField.swift in Sources */,
+				2BD5CC6624F6508000148FF5 /* XViewController.swift in Sources */,
 				2BEA194324EF611C00A26CF9 /* SceneDelegate.swift in Sources */,
 				2B1BB0A024F4A8F00074ED6B /* HBPaddingTextField.swift in Sources */,
 				2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */,

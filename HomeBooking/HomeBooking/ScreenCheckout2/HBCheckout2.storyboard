@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Sv-ww-a5x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7ro-Ko-w4N">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -75,7 +75,7 @@
                                                     <constraint firstItem="3Or-FQ-VWl" firstAttribute="leading" secondItem="xMz-SB-nGA" secondAttribute="trailing" constant="16" id="wOY-D1-xCv"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cart Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kaG-3k-F8J" customClass="HBPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cart Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kaG-3k-F8J" customClass="HBNumberTextField" customModule="HomeBooking" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="256" width="366" height="56"/>
                                                 <color key="backgroundColor" name="gray-light"/>
                                                 <constraints>
@@ -84,7 +84,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ig7-4b-pmi" customClass="HBPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ig7-4b-pmi" customClass="HBNumberTextField" customModule="HomeBooking" customModuleProvider="target">
                                                 <rect key="frame" x="215" y="336" width="175" height="56"/>
                                                 <color key="backgroundColor" name="gray-light"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -197,6 +197,196 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gTM-xp-Kat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-46.376811594202906" y="125.89285714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="j88-VQ-bSb">
+            <objects>
+                <viewController storyboardIdentifier="XViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7ro-Ko-w4N" customClass="XViewController" customModule="HomeBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQJ-xL-MRA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvk-fT-5Qi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="714"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mm4-aq-CBJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="568"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86d-Uk-Apq">
+                                                <rect key="frame" x="36" y="24" width="342" height="200"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CreditCard" translatesAutoresizingMaskIntoConstraints="NO" id="uUA-2a-3hu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="200"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888 8888 8888 8888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V97-kX-e5f">
+                                                        <rect key="frame" x="14" y="102" width="314" height="26"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="26" id="Bdu-f0-Iuo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IG-GM-6gF">
+                                                        <rect key="frame" x="245" y="147" width="75" height="26"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="26" id="GsO-jS-whZ"/>
+                                                            <constraint firstAttribute="width" constant="75" id="htf-UI-uhX"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOHN DOE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0t-yq-lxD">
+                                                        <rect key="frame" x="14" y="147" width="215" height="26"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="26" id="Etq-hc-vO7"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="uUA-2a-3hu" secondAttribute="bottom" id="3oh-Tn-WFr"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9IG-GM-6gF" secondAttribute="trailing" constant="22" id="41t-Rv-uxZ"/>
+                                                    <constraint firstItem="O0t-yq-lxD" firstAttribute="leading" secondItem="86d-Uk-Apq" secondAttribute="leading" constant="14" id="9CR-B4-Dd9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="V97-kX-e5f" secondAttribute="trailing" constant="14" id="Jc0-Id-I3w"/>
+                                                    <constraint firstItem="V97-kX-e5f" firstAttribute="leading" secondItem="86d-Uk-Apq" secondAttribute="leading" constant="14" id="K5r-cb-Irq"/>
+                                                    <constraint firstAttribute="height" constant="200" id="KDE-sO-I1z"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uUA-2a-3hu" secondAttribute="trailing" id="O9R-wI-hKx"/>
+                                                    <constraint firstItem="9IG-GM-6gF" firstAttribute="leading" secondItem="O0t-yq-lxD" secondAttribute="trailing" constant="16" id="UVv-mv-wkc"/>
+                                                    <constraint firstItem="uUA-2a-3hu" firstAttribute="leading" secondItem="86d-Uk-Apq" secondAttribute="leading" id="ei0-55-kko"/>
+                                                    <constraint firstItem="uUA-2a-3hu" firstAttribute="top" secondItem="86d-Uk-Apq" secondAttribute="top" id="g0l-MJ-tDr"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9IG-GM-6gF" secondAttribute="bottom" constant="27" id="iUH-mH-Ouw"/>
+                                                    <constraint firstAttribute="width" secondItem="86d-Uk-Apq" secondAttribute="height" multiplier="339/198" id="jdN-V6-aIX"/>
+                                                    <constraint firstItem="O0t-yq-lxD" firstAttribute="top" secondItem="V97-kX-e5f" secondAttribute="bottom" constant="19" id="kbK-nA-ilh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="O0t-yq-lxD" secondAttribute="bottom" constant="27" id="lUr-lZ-4XL"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cart Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Uzk-rP-34k" customClass="HBNumberTextField" customModule="HomeBooking" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="256" width="366" height="56"/>
+                                                <color key="backgroundColor" name="gray-light"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="kI0-B2-1Jm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expiry" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BAc-6T-eOm" customClass="HBDatePickerTextField" customModule="HomeBooking" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="336" width="175" height="56"/>
+                                                <color key="backgroundColor" name="gray-light"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="dateFormat" value="MM/yy"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="YIk-VG-xk9" customClass="HBNumberTextField" customModule="HomeBooking" customModuleProvider="target">
+                                                <rect key="frame" x="215" y="336" width="175" height="56"/>
+                                                <color key="backgroundColor" name="gray-light"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDU-Ac-lXd">
+                                                <rect key="frame" x="24" y="496" width="200" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ht4-4K-S4R"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Save this credit card" image="unselectedCheckBoxIcon">
+                                                    <color key="titleColor" name="gray"/>
+                                                </state>
+                                                <state key="selected" title="Save this credit card" image="selectedCheckBoxIcon"/>
+                                                <connections>
+                                                    <action selector="didTouchSaveCardInfo:" destination="7ro-Ko-w4N" eventType="touchUpInside" id="mAR-be-pfO"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5bu-rR-7fs" customClass="HBPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="416" width="366" height="56"/>
+                                                <color key="backgroundColor" name="gray-light"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="5bu-rR-7fs" firstAttribute="leading" secondItem="Uzk-rP-34k" secondAttribute="leading" id="5N7-ek-7Oo"/>
+                                            <constraint firstItem="BAc-6T-eOm" firstAttribute="width" secondItem="YIk-VG-xk9" secondAttribute="width" id="Fzm-Io-fbc"/>
+                                            <constraint firstItem="pDU-Ac-lXd" firstAttribute="leading" secondItem="Uzk-rP-34k" secondAttribute="leading" id="GEQ-9o-Poe"/>
+                                            <constraint firstItem="YIk-VG-xk9" firstAttribute="height" secondItem="BAc-6T-eOm" secondAttribute="height" id="IJo-f9-4UU"/>
+                                            <constraint firstItem="YIk-VG-xk9" firstAttribute="top" secondItem="BAc-6T-eOm" secondAttribute="top" id="Jrq-W9-Pgn"/>
+                                            <constraint firstItem="86d-Uk-Apq" firstAttribute="centerX" secondItem="Mm4-aq-CBJ" secondAttribute="centerX" id="NN5-AI-e6c"/>
+                                            <constraint firstItem="BAc-6T-eOm" firstAttribute="leading" secondItem="Uzk-rP-34k" secondAttribute="leading" id="SCf-ep-If2"/>
+                                            <constraint firstItem="YIk-VG-xk9" firstAttribute="trailing" secondItem="Uzk-rP-34k" secondAttribute="trailing" id="VgK-mb-Ml8"/>
+                                            <constraint firstAttribute="trailing" secondItem="Uzk-rP-34k" secondAttribute="trailing" constant="24" id="Zt1-SC-TIJ"/>
+                                            <constraint firstItem="5bu-rR-7fs" firstAttribute="top" secondItem="BAc-6T-eOm" secondAttribute="bottom" constant="24" id="bvT-3N-rng"/>
+                                            <constraint firstAttribute="bottom" secondItem="pDU-Ac-lXd" secondAttribute="bottom" constant="24" id="d4l-Rm-V5Y"/>
+                                            <constraint firstItem="5bu-rR-7fs" firstAttribute="height" secondItem="Uzk-rP-34k" secondAttribute="height" id="eRY-3S-7WQ"/>
+                                            <constraint firstItem="86d-Uk-Apq" firstAttribute="top" secondItem="Mm4-aq-CBJ" secondAttribute="top" constant="24" id="gLD-Yd-dNa"/>
+                                            <constraint firstItem="BAc-6T-eOm" firstAttribute="height" secondItem="Uzk-rP-34k" secondAttribute="height" id="j9v-Gq-9fe"/>
+                                            <constraint firstItem="Uzk-rP-34k" firstAttribute="leading" secondItem="Mm4-aq-CBJ" secondAttribute="leading" constant="24" id="lwT-UJ-AcE"/>
+                                            <constraint firstItem="pDU-Ac-lXd" firstAttribute="top" secondItem="5bu-rR-7fs" secondAttribute="bottom" constant="24" id="nOM-L1-LwD"/>
+                                            <constraint firstItem="Uzk-rP-34k" firstAttribute="top" secondItem="86d-Uk-Apq" secondAttribute="bottom" constant="32" id="omj-7P-N3Y"/>
+                                            <constraint firstItem="YIk-VG-xk9" firstAttribute="leading" secondItem="BAc-6T-eOm" secondAttribute="trailing" constant="16" id="rbA-8o-CAO"/>
+                                            <constraint firstItem="BAc-6T-eOm" firstAttribute="top" secondItem="Uzk-rP-34k" secondAttribute="bottom" constant="24" id="tYb-kV-Llx"/>
+                                            <constraint firstItem="5bu-rR-7fs" firstAttribute="trailing" secondItem="Uzk-rP-34k" secondAttribute="trailing" id="z4V-Sj-uhD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Mm4-aq-CBJ" secondAttribute="trailing" id="IPL-Od-YTW"/>
+                                    <constraint firstItem="Mm4-aq-CBJ" firstAttribute="width" secondItem="xvk-fT-5Qi" secondAttribute="width" id="VYW-Rc-6Q2"/>
+                                    <constraint firstItem="Mm4-aq-CBJ" firstAttribute="top" secondItem="xvk-fT-5Qi" secondAttribute="top" id="o7h-ng-4v9"/>
+                                    <constraint firstItem="Mm4-aq-CBJ" firstAttribute="leading" secondItem="xvk-fT-5Qi" secondAttribute="leading" id="pNB-vX-cR5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mm4-aq-CBJ" secondAttribute="bottom" id="u9o-sE-yP9"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PC2-tk-vzS">
+                                <rect key="frame" x="24" y="766" width="366" height="72"/>
+                                <color key="backgroundColor" name="orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="L3y-eb-bll"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Go to Confirmation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTouchGoToConfirm:" destination="7ro-Ko-w4N" eventType="touchUpInside" id="4v7-KP-HHW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xvk-fT-5Qi" firstAttribute="leading" secondItem="9Hr-Sr-wZf" secondAttribute="leading" id="3bg-Oe-u6g"/>
+                            <constraint firstItem="9Hr-Sr-wZf" firstAttribute="bottom" secondItem="PC2-tk-vzS" secondAttribute="bottom" constant="24" id="EWR-yB-RWy"/>
+                            <constraint firstItem="xvk-fT-5Qi" firstAttribute="trailing" secondItem="9Hr-Sr-wZf" secondAttribute="trailing" id="IJg-Gp-Ypx"/>
+                            <constraint firstItem="xvk-fT-5Qi" firstAttribute="top" secondItem="9Hr-Sr-wZf" secondAttribute="top" id="IM6-iJ-FME"/>
+                            <constraint firstItem="PC2-tk-vzS" firstAttribute="leading" secondItem="9Hr-Sr-wZf" secondAttribute="leading" constant="24" id="Xe7-2p-OOA"/>
+                            <constraint firstItem="xvk-fT-5Qi" firstAttribute="width" secondItem="uQJ-xL-MRA" secondAttribute="width" id="n1p-V1-ghb"/>
+                            <constraint firstItem="9Hr-Sr-wZf" firstAttribute="trailing" secondItem="PC2-tk-vzS" secondAttribute="trailing" constant="24" id="nfo-bq-ZFa"/>
+                            <constraint firstItem="PC2-tk-vzS" firstAttribute="top" secondItem="xvk-fT-5Qi" secondAttribute="bottom" constant="8" id="y3F-eS-PUg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Hr-Sr-wZf"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardNumberLabel" destination="V97-kX-e5f" id="ECN-Bs-CcF"/>
+                        <outlet property="cardNumberTextField" destination="Uzk-rP-34k" id="sa1-Lw-F04"/>
+                        <outlet property="cvvTextField" destination="YIk-VG-xk9" id="h8z-uo-aR4"/>
+                        <outlet property="expiryLabel" destination="9IG-GM-6gF" id="2r0-Qh-pqk"/>
+                        <outlet property="expiryTextField" destination="BAc-6T-eOm" id="pAc-JE-lcf"/>
+                        <outlet property="goToConfirmationButton" destination="PC2-tk-vzS" id="Rhq-xV-mJH"/>
+                        <outlet property="nameLabel" destination="O0t-yq-lxD" id="70P-6B-il4"/>
+                        <outlet property="nameTextField" destination="5bu-rR-7fs" id="Y7e-cC-GwM"/>
+                        <outlet property="saveCardButton" destination="pDU-Ac-lXd" id="sin-5S-81p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lU5-FO-X93" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="126"/>
         </scene>
     </scenes>
     <resources>
