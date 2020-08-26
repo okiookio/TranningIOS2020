@@ -52,6 +52,9 @@ class ViewController: UIViewController {
     @IBAction func goToCheckout2(_ sender : UIButton){
         let storybroad: UIStoryboard = UIStoryboard(name: "HBCheckout2", bundle: nil)
         let hbCheckout2ViewController = storybroad.instantiateViewController(identifier: "HBCheckout2") as! HBCheckout2ViewController
+        hbCheckout2ViewController.didTouchGoToConfirmation = { [weak self] (data) in
+            print("Data checkout \(data)")
+        }
         navigationController?.pushViewController(hbCheckout2ViewController, animated: true)
     }
 }

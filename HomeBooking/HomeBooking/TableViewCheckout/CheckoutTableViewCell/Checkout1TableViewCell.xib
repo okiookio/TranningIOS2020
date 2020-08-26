@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FR4-gQ-NV6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Asq-tF-sR1" customClass="UIPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Asq-tF-sR1" customClass="HBPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
                                 <rect key="frame" x="24" y="8" width="272" height="56"/>
                                 <color key="backgroundColor" name="gray-light"/>
                                 <constraints>

@@ -25,15 +25,15 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Df-Ib-gTU">
                                                 <rect key="frame" x="36" y="24" width="342" height="200"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CreditCard-1" translatesAutoresizingMaskIntoConstraints="NO" id="gVb-Pj-JAO">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CreditCard" translatesAutoresizingMaskIntoConstraints="NO" id="gVb-Pj-JAO">
                                                         <rect key="frame" x="0.0" y="0.0" width="342" height="200"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888 8888 8888 8888" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttK-Vm-C0v">
-                                                        <rect key="frame" x="14" y="107" width="314" height="25"/>
+                                                        <rect key="frame" x="14" y="102" width="314" height="26"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="25" id="iC0-cS-uFs"/>
+                                                            <constraint firstAttribute="height" constant="26" id="iC0-cS-uFs"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -48,9 +48,9 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOHN DOE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMz-SB-nGA">
-                                                        <rect key="frame" x="14" y="151" width="215" height="22"/>
+                                                        <rect key="frame" x="14" y="147" width="215" height="26"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="22" id="qU3-gM-BHO"/>
+                                                            <constraint firstAttribute="height" constant="26" id="qU3-gM-BHO"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -75,28 +75,28 @@
                                                     <constraint firstItem="3Or-FQ-VWl" firstAttribute="leading" secondItem="xMz-SB-nGA" secondAttribute="trailing" constant="16" id="wOY-D1-xCv"/>
                                                 </constraints>
                                             </view>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cart Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kaG-3k-F8J" customClass="UIPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cart Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kaG-3k-F8J" customClass="HBPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="256" width="366" height="56"/>
+                                                <color key="backgroundColor" name="gray-light"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="GZc-ux-LVd"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expiry" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="obQ-wc-NT3" customClass="UIPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="336" width="171" height="56"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ig7-4b-pmi" customClass="HBPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
+                                                <rect key="frame" x="215" y="336" width="175" height="56"/>
+                                                <color key="backgroundColor" name="gray-light"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ig7-4b-pmi" customClass="UIPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
-                                                <rect key="frame" x="219" y="336" width="171" height="56"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7T-Cs-4qG">
-                                                <rect key="frame" x="24" y="496" width="184" height="24"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7T-Cs-4qG">
+                                                <rect key="frame" x="24" y="496" width="200" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="1Qc-PY-aZB"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                                                <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Save this credit card" image="unselectedCheckBoxIcon">
                                                     <color key="titleColor" name="gray"/>
                                                 </state>
@@ -105,10 +105,20 @@
                                                     <action selector="didTouchSaveCardButton:" destination="5Sv-ww-a5x" eventType="touchUpInside" id="9WT-nr-YfE"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xjb-t0-HvJ" customClass="UIPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Xjb-t0-HvJ" customClass="HBPaddingTextField" customModule="HomeBooking" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="416" width="366" height="56"/>
+                                                <color key="backgroundColor" name="gray-light"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expiry" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="obQ-wc-NT3" customClass="HBDatePickerTextField" customModule="HomeBooking" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="336" width="175" height="56"/>
+                                                <color key="backgroundColor" name="gray-light"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="dateFormat" value="MM/yy"/>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -120,7 +130,7 @@
                                             <constraint firstItem="ig7-4b-pmi" firstAttribute="top" secondItem="obQ-wc-NT3" secondAttribute="top" id="J1F-SJ-NCp"/>
                                             <constraint firstItem="ig7-4b-pmi" firstAttribute="height" secondItem="obQ-wc-NT3" secondAttribute="height" id="Pv9-lp-qiV"/>
                                             <constraint firstItem="ig7-4b-pmi" firstAttribute="trailing" secondItem="kaG-3k-F8J" secondAttribute="trailing" id="TkM-Uv-R4X"/>
-                                            <constraint firstItem="ig7-4b-pmi" firstAttribute="leading" secondItem="obQ-wc-NT3" secondAttribute="trailing" constant="24" id="UWr-lw-4K1"/>
+                                            <constraint firstItem="ig7-4b-pmi" firstAttribute="leading" secondItem="obQ-wc-NT3" secondAttribute="trailing" constant="16" id="UWr-lw-4K1"/>
                                             <constraint firstAttribute="bottom" secondItem="z7T-Cs-4qG" secondAttribute="bottom" constant="24" id="YE8-OD-Vnc"/>
                                             <constraint firstItem="Xjb-t0-HvJ" firstAttribute="leading" secondItem="kaG-3k-F8J" secondAttribute="leading" id="Zt3-WN-RVC"/>
                                             <constraint firstItem="obQ-wc-NT3" firstAttribute="width" secondItem="ig7-4b-pmi" secondAttribute="width" id="biS-Qf-Hck"/>
@@ -173,9 +183,13 @@
                         <viewLayoutGuide key="safeArea" id="7xP-Qo-p8p"/>
                     </view>
                     <connections>
+                        <outlet property="cardNumberLabel" destination="ttK-Vm-C0v" id="qpv-sx-Sva"/>
                         <outlet property="cardNumberTextField" destination="kaG-3k-F8J" id="Btv-EJ-mrU"/>
                         <outlet property="cvvTextField" destination="ig7-4b-pmi" id="HAN-Uf-oqs"/>
+                        <outlet property="expiryLabel" destination="3Or-FQ-VWl" id="s2K-sD-3jP"/>
                         <outlet property="expiryTextField" destination="obQ-wc-NT3" id="A4I-lm-g8h"/>
+                        <outlet property="goToConfirmationButton" destination="KT0-as-skh" id="edM-EY-5ZO"/>
+                        <outlet property="nameLabel" destination="xMz-SB-nGA" id="uUs-B6-nZf"/>
                         <outlet property="nameTextField" destination="Xjb-t0-HvJ" id="FBH-wC-iXi"/>
                         <outlet property="saveCardButton" destination="z7T-Cs-4qG" id="00l-qo-fML"/>
                     </connections>
@@ -186,11 +200,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CreditCard-1" width="339" height="198"/>
+        <image name="CreditCard" width="339" height="198"/>
         <image name="selectedCheckBoxIcon" width="24" height="24"/>
         <image name="unselectedCheckBoxIcon" width="24" height="24"/>
         <namedColor name="gray">
             <color red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray-light">
+            <color red="0.87450980392156863" green="0.87058823529411766" blue="0.87058823529411766" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="orange">
             <color red="0.97254901960784312" green="0.63137254901960782" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

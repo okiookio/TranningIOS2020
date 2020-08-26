@@ -10,7 +10,7 @@ import UIKit
 
 class HBInputNumberTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var textFieldInputNumber: UIPaddingTextField!
+    @IBOutlet weak var textFieldInputNumber: HBPaddingTextField!
     var didEndEditAction: ((String) -> ())?
 
     override func awakeFromNib() {

@@ -1,26 +1,33 @@
 //
-//  UIPaddingTextField.swift
+//  HBTextField.swift
 //  HomeBooking
 //
-//  Created by helIgate on 8/25/20.
+//  Created by helIgate on 8/26/20.
 //  Copyright © 2020 helIgate. All rights reserved.
-// 
+//
 
 import UIKit
 
-class UIPaddingTextField: UITextField {
-
-    var padding = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10) {
+class HBTextField: UITextField {
+    var padding: UIEdgeInsets = .zero {
         didSet {
             setNeedsDisplay()
             setNeedsLayout()
         }
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configStyle()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        configStyle()
     }
 
+    func configStyle() {}
+    
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
     }

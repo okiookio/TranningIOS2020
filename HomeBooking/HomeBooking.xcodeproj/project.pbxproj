@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B1BB0A024F4A8F00074ED6B /* UIPaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB09F24F4A8F00074ED6B /* UIPaddingTextField.swift */; };
+		2B093DB824F5F70E0028820F /* HBCheckout2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DB724F5F70E0028820F /* HBCheckout2.swift */; };
+		2B093DBA24F612C00028820F /* HBDatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DB924F612C00028820F /* HBDatePickerTextField.swift */; };
+		2B093DBC24F612DF0028820F /* HBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DBB24F612DF0028820F /* HBTextField.swift */; };
+		2B1BB0A024F4A8F00074ED6B /* HBPaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB09F24F4A8F00074ED6B /* HBPaddingTextField.swift */; };
 		2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */; };
 		2B1BB0A824F4B8960074ED6B /* HBInputNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1BB0A624F4B8960074ED6B /* HBInputNumberTableViewCell.xib */; };
 		2B52D7E824F5006700D8FF1A /* HBUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D7E724F5006700D8FF1A /* HBUser.storyboard */; };
@@ -43,7 +46,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B1BB09F24F4A8F00074ED6B /* UIPaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPaddingTextField.swift; sourceTree = "<group>"; };
+		2B093DB724F5F70E0028820F /* HBCheckout2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckout2.swift; sourceTree = "<group>"; };
+		2B093DB924F612C00028820F /* HBDatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBDatePickerTextField.swift; sourceTree = "<group>"; };
+		2B093DBB24F612DF0028820F /* HBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBTextField.swift; sourceTree = "<group>"; };
+		2B1BB09F24F4A8F00074ED6B /* HBPaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBPaddingTextField.swift; sourceTree = "<group>"; };
 		2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBInputNumberTableViewCell.swift; sourceTree = "<group>"; };
 		2B1BB0A624F4B8960074ED6B /* HBInputNumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBInputNumberTableViewCell.xib; sourceTree = "<group>"; };
 		2B52D7E724F5006700D8FF1A /* HBUser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBUser.storyboard; sourceTree = "<group>"; };
@@ -97,7 +103,9 @@
 		2B1BB09E24F4A8CC0074ED6B /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				2B1BB09F24F4A8F00074ED6B /* UIPaddingTextField.swift */,
+				2B1BB09F24F4A8F00074ED6B /* HBPaddingTextField.swift */,
+				2B093DBB24F612DF0028820F /* HBTextField.swift */,
+				2B093DB924F612C00028820F /* HBDatePickerTextField.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -198,6 +206,7 @@
 				2BEA195524EF61B300A26CF9 /* HBFilter.swift */,
 				2BEA197124EFD0B200A26CF9 /* SampleData.swift */,
 				2BA972AD24F21C0C00419967 /* HBCheckoutModel.swift */,
+				2B093DB724F5F70E0028820F /* HBCheckout2.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -376,13 +385,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B093DB824F5F70E0028820F /* HBCheckout2.swift in Sources */,
 				2B52D7EE24F5012F00D8FF1A /* HBUserTableViewCell.swift in Sources */,
 				2BEA194524EF611C00A26CF9 /* ViewController.swift in Sources */,
 				2BEA195624EF61B300A26CF9 /* HBFilter.swift in Sources */,
 				2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */,
 				2BEA194124EF611C00A26CF9 /* AppDelegate.swift in Sources */,
 				2BEA194324EF611C00A26CF9 /* SceneDelegate.swift in Sources */,
-				2B1BB0A024F4A8F00074ED6B /* UIPaddingTextField.swift in Sources */,
+				2B1BB0A024F4A8F00074ED6B /* HBPaddingTextField.swift in Sources */,
 				2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */,
 				2BEA196D24EFCAD300A26CF9 /* SwichTableViewCell.swift in Sources */,
 				2BEA196924EFCAAF00A26CF9 /* SelectedTableViewCell.swift in Sources */,
@@ -392,7 +402,9 @@
 				2BA972AE24F21C0C00419967 /* HBCheckoutModel.swift in Sources */,
 				2BA972A724F2140200419967 /* HBCheckout1ViewController.swift in Sources */,
 				2B52D7EA24F5008F00D8FF1A /* HBUserViewController.swift in Sources */,
+				2B093DBA24F612C00028820F /* HBDatePickerTextField.swift in Sources */,
 				2BEA195C24EF66EB00A26CF9 /* FilterViewController.swift in Sources */,
+				2B093DBC24F612DF0028820F /* HBTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

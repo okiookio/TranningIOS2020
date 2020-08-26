@@ -10,7 +10,7 @@ import UIKit
 
 
 class Checkout1TableViewCell: UITableViewCell {
-    @IBOutlet weak var textField: UIPaddingTextField!
+    @IBOutlet weak var textField: HBPaddingTextField!
 
     var didEndEditAction: ((String) -> ())?
 
