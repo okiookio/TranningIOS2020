@@ -104,6 +104,7 @@ class XViewController: UIViewController {
     @IBAction func didTouchGoToConfirm(_ sender: Any) {
         guard let data = getData() else { return }
         self.completeWithVisaCard?(data)
+        navigationController?.popViewController(animated: true)
     }
 
     @IBAction func didTouchSaveCardInfo(_ sender: Any) {

@@ -5,6 +5,11 @@
 //  Created by helIgate on 8/21/20.
 //  Copyright © 2020 helIgate. All rights reserved.
 //
+- Aug 27, 2020
+1, UIPageViewController
+2, Custom introduction 3 man hinh
+3, Tìm hiểu NSUserDefault ( UserDefault )
+4,  Xây dựng màn notification.
 
 - Aug 26, 2020
 1, Hoàn thành giao diện checkout2
@@ -15,8 +20,7 @@
 - UI :
 + Hoàn thiện UI
 
-- Tìm hiểu NSUserDefault ( UserDefault )
-- Xây dựng màn notification.
+
 
 - Aug 24, 2020
 1, UITextFiels :

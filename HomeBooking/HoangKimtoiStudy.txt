@@ -5,6 +5,12 @@
 //  Created by helIgate on 8/22/20.
 //  Copyright © 2020 helIgate. All rights reserved.
 //
+- Aug 26, 2020
+1, Hoàn thành màn hình checkout2
+2, Sử dụng thư viện SwiftDate
+3, Sử dụng func addTarget trong UITextField
+4, Custom NumberTextField
+5, Sử dụng didSet trong biến
 
 
 - Aug 25, 2020
