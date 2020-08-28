@@ -9,7 +9,7 @@
 import UIKit
 
 class HBCheckout1ViewController: UIViewController {
-    
+
     enum HBCheckoutField: Int, CaseIterable {
         case firstName
         case lastName
@@ -39,7 +39,7 @@ class HBCheckout1ViewController: UIViewController {
         }
 
     }
-    
+
     @IBOutlet weak var goToPaymentButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     private var checkoutData = HBCheckoutModel()
@@ -51,19 +51,23 @@ class HBCheckout1ViewController: UIViewController {
         self.setupToHideKeyboardOnTapOnView()
 
         // Do any additional setup after loading the view.
-        tableView.register(UINib(nibName: "Checkout1TableViewCell", bundle: nil), forCellReuseIdentifier: "Checkout1TableViewCell")
-        tableView.register(UINib(nibName: "HBInputNumberTableViewCell", bundle: nil), forCellReuseIdentifier: "HBInputNumberTableViewCell")
+//        tableView.register(UINib(nibName: "Checkout1TableViewCell", bundle: nil), forCellReuseIdentifier: "Checkout1TableViewCell")
+//        tableView.register(UINib(nibName: "HBInputNumberTableViewCell", bundle: nil), forCellReuseIdentifier: "HBInputNumberTableViewCell")
+//        tableView.registerCell(Checkout1TableViewCell.self)
+//        tableView.registerCells([Checkout1TableViewCell.self,
+//                                    HBInputNumberTableViewCell.self])
+        tableView.registerCell(HBInputNumberTableViewCell.self)
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         tableView.delegate = self
         tableView.dataSource = self
         goToPaymentButton.layer.cornerRadius = 10
     }
-    
+
     @IBAction func didTouchGoToPayment(_ sender: UIButton) {
         self.updateCheckout?(checkoutData)
         navigationController?.popViewController(animated: true)
     }
-    
+
     func bindDataCheckout(_ data: HBCheckoutModel) {
         self.checkoutData = data
     }
@@ -99,7 +103,7 @@ extension HBCheckout1ViewController: UITableViewDataSource {
             cell.bindData(self.checkoutData.lastName)
             cell.didEndEditAction = { [weak self] (text) in
                 self?.checkoutData.lastName = text
-                
+
             }
             return cell
         case .emailAddress:

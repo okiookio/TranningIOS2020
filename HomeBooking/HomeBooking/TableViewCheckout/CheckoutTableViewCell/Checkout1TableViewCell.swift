@@ -60,3 +60,5 @@ extension UITextField {
         self.attributedPlaceholder = attributedString
     }
 }
+
+extension Checkout1TableViewCell: Reusable {}

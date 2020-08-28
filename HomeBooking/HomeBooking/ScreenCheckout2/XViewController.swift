@@ -20,6 +20,8 @@ class XViewController: UIViewController {
     @IBOutlet weak var saveCardButton: UIButton!
     @IBOutlet weak var goToConfirmationButton: UIButton!
 
+    private let userDefault = HBUserdefault.shared
+
     private var data: HBCheckout2 = HBCheckout2() {
         didSet {
             if self.view != nil {
@@ -27,7 +29,7 @@ class XViewController: UIViewController {
             }
         }
     }
-    
+
     var completeWithVisaCard: ((HBCheckout2) -> Void)?
     func setData(_ data: HBCheckout2) {
         self.data = data
@@ -40,9 +42,16 @@ class XViewController: UIViewController {
     }
 
     func configUI() {
+        let data = HBUserdefault.shared.getObjectData(forKey: "saveDataCheckout2", type: HBCheckout2.self)
+        if let _ = data {
+            self.saveCardButton.isSelected = true
+        } else {
+            self.saveCardButton.isSelected = false
+        }
+
         cardNumberTextField.limitCharacter = 16
         cvvTextField.limitCharacter = 3
-        
+
         nameTextField.addTarget(self, action: #selector(handleUpdateOf(_:)), for: .editingChanged)
         nameTextField.addTarget(self, action: #selector(handleUpdateOf(_:)), for: .editingDidEnd)
         cardNumberTextField.addTarget(self, action: #selector(handleUpdateOf(_:)), for: .editingChanged)
@@ -52,7 +61,7 @@ class XViewController: UIViewController {
         cvvTextField.addTarget(self, action: #selector(handleUpdateOf(_:)), for: .editingChanged)
         cvvTextField.addTarget(self, action: #selector(handleUpdateOf(_:)), for: .editingDidEnd)
     }
-    
+
     @objc func handleUpdateOf(_ textField: UITextField) {
         switch textField {
         case nameTextField:
@@ -70,7 +79,7 @@ class XViewController: UIViewController {
 
     private func updateUI(with data: HBCheckout2) {
         cardNumberLabel.text = data.displayCardNumber()
-        nameLabel.text = data.displayName()
+        nameLabel.text = data.displayName()?.uppercased()
         expiryLabel.text = data.displayExpiry()
         if let cardNumber = data.cardNumber, let number = Int(cardNumber) {
             cardNumberTextField.number = number
@@ -110,16 +119,13 @@ class XViewController: UIViewController {
     @IBAction func didTouchSaveCardInfo(_ sender: Any) {
         guard let button = sender as? UIButton else { return }
         button.isSelected = !button.isSelected
-    }
-}
 
-extension HBCheckout2 {
-    var isVisa: Bool {
-        guard let number = cardNumber, number.count > 0, number.count <= 16 else { return false }
-        guard let ex = expiry, !ex.isEmpty else { return false }
-        guard let c = cvv, c.count > 0, c.count <= 16 else { return false }
-        guard let n = name, !n.isEmpty else { return false }
-        return true
+        if button.isSelected {
+            userDefault.setObjectData(data, forKey: "saveDataCheckout2")
+        }else{
+            userDefault.removeKey("saveDataCheckout2")
+        }
+
     }
 }
 

@@ -5,6 +5,17 @@
 //  Created by helIgate on 8/22/20.
 //  Copyright © 2020 helIgate. All rights reserved.
 //
+- Aug 28, 2020
+1, Hoàn thành màn Notification
+2, Lưu object bằng userDefault có sử dụng hàm generic
+3, Tìm hiểu Encoder và Decoder
+
+- Aug 27, 2020
+1, Tìm hiểu userDefault
+2, Xây dựng màn hình Notification
+3, Làm quen với hàm generic
+4, Hoàn thành giao diện sử dụng UIPageViewController
+
 - Aug 26, 2020
 1, Hoàn thành màn hình checkout2
 2, Sử dụng thư viện SwiftDate

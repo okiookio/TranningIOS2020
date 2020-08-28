@@ -15,12 +15,33 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    override func viewDidAppear(_ animated: Bool) {
+//        let data = HBUserdefault.shared.getObjectData(forKey: "saveDataCheckout2", type: HBCheckout2.self)
+//        guard let value = data else { return }
+//        print(value)
+//
+//        let encode = CodableExample.constaint.encode(value)
+//        print(encode ?? "")
+//        let decode = CodableExample.constaint.decode(data: encode!, type: HBCheckout2.self)
+//        print(decode ?? "")
+//
+//        let dictionary = [
+//            "A" : 1,
+//            "B" : 2,
+//            "C" : 3
+//        ]
+//
+//        HBUserdefault.shared.setObjectData(dictionary, forKey: "dictionary")
+//        var string = HBUserdefault.shared.getObjectData(forKey: "dictionary", type: [String:Int].self)
+//        string!["A"] = 4
+//        print(string ?? "")
+
+    }
 
     @IBAction func goToFilter(_ sender: Any) {
         let filterViewController = FilterViewController()
         filterViewController.updateFilter = { (data) in
             print(data)
-//            self.loadData(data)
         }
         navigationController?.pushViewController(filterViewController, animated: true)
     }
@@ -50,26 +71,40 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(hbUserViewController, animated: true)
     }
     @IBAction func goToCheckout2(_ sender: UIButton) {
-//        let storybroad: UIStoryboard = UIStoryboard(name: "HBCheckout2", bundle: nil)
-//        let hbCheckout2ViewController = storybroad.instantiateViewController(identifier: "HBCheckout2") as! HBCheckout2ViewController
-//        hbCheckout2ViewController.didTouchGoToConfirmation = { [weak self] (data) in
+        let storybroad: UIStoryboard = UIStoryboard(name: "HBCheckout2", bundle: nil)
+        let hbCheckout2ViewController = storybroad.instantiateViewController(identifier:          "HBCheckout2") as! HBCheckout2ViewController
+        hbCheckout2ViewController.didTouchGoToConfirmation = { [weak self] (data) in
 //            print("Data checkout \(data)")
-//        }
-//
-//      let checkout2 = HBCheckout2(cardNumber: "123456778", expiry: Date(), cvv: "123", name: "Hoang kim toi")
-//        hbCheckout2ViewController.setDataCheckout(checkout2)
-//        navigationController?.pushViewController(hbCheckout2ViewController, animated: true)
-//
-        
-        let data = HBCheckout2(cardNumber: "1234 5678 9123 4567", expiry: "08/23", cvv: "123", name: "JONH WICK")
-        goX(data)
+        }
+        if let data = HBUserdefault.shared.getObjectData(forKey: "saveDataCheckout2", type: HBCheckout2.self) {
+            hbCheckout2ViewController.setDataCheckout(data)
+            navigationController?.pushViewController(hbCheckout2ViewController, animated: true)
+        } else {
+            navigationController?.pushViewController(hbCheckout2ViewController, animated: true)
+        }
+
+//        let data = HBCheckout2(cardNumber: "1234 5678 9123 4567", expiry: "08/23", cvv: "123", name: "JONH WICK")
+//        goX(data)
     }
 
     func goX(_ data: HBCheckout2) {
         let storybroad: UIStoryboard = UIStoryboard(name: "HBCheckout2", bundle: nil)
         let vc = storybroad.instantiateViewController(identifier: "XViewController") as! XViewController
         vc.completeWithVisaCard = { [weak self] (card) in
-            print(card)
+//            print(card)
+        }
+        if let data = HBUserdefault.shared.getObjectData(forKey: "saveDataCheckout2", type: HBCheckout2.self) {
+            vc.setData(data)
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    @IBAction func goToNotice() {
+        let storybroad: UIStoryboard = UIStoryboard(name: "HBNotice", bundle: nil)
+        let vc = storybroad.instantiateViewController(identifier: "HBNotice") as! HBNoticeViewController
+        vc.didTouchBack = { [weak self] (arr) in
+            print(arr)
         }
         navigationController?.pushViewController(vc, animated: true)
     }

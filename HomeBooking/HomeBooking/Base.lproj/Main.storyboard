@@ -46,12 +46,22 @@
                                     <action selector="goToUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iSo-Kq-afQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlN-fB-dJS">
-                                <rect key="frame" x="144" y="222" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlN-fB-dJS">
+                                <rect key="frame" x="139" y="222" width="75" height="30"/>
                                 <state key="normal" title="Checkout2"/>
                                 <connections>
                                     <action selector="goToCheckout2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FYr-sZ-RZ4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lo8-QP-sc3">
+                                <rect key="frame" x="291" y="222" width="50" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ata-qD-VY1"/>
+                                    <constraint firstAttribute="width" constant="50" id="b0A-1U-GAF"/>
+                                </constraints>
+                                <state key="normal" title="Notice"/>
+                                <connections>
+                                    <action selector="goToNotice" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyn-0z-3Su"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,10 +72,15 @@
                             <constraint firstItem="Pz8-tz-opX" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="5np-Of-kvw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ir7-Z3-vbS" secondAttribute="trailing" constant="182" id="8Q3-0Q-kcQ"/>
                             <constraint firstItem="SI6-2i-NsA" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8iU-g4-i4c"/>
+                            <constraint firstItem="VlN-fB-dJS" firstAttribute="top" secondItem="Ir7-Z3-vbS" secondAttribute="bottom" constant="69" id="9Kk-VQ-YVi"/>
                             <constraint firstItem="SI6-2i-NsA" firstAttribute="top" secondItem="Pz8-tz-opX" secondAttribute="bottom" constant="62" id="DnU-0X-boc"/>
                             <constraint firstItem="gks-kM-3TI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="ECe-wM-Mbg"/>
                             <constraint firstItem="Pz8-tz-opX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="KBh-Ge-f6H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lo8-QP-sc3" secondAttribute="trailing" constant="73" id="QSs-Ps-6hg"/>
+                            <constraint firstItem="VlN-fB-dJS" firstAttribute="leading" secondItem="SI6-2i-NsA" secondAttribute="trailing" constant="56" id="Woe-mL-jqy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gks-kM-3TI" secondAttribute="trailing" constant="20" id="ayl-8C-o4A"/>
+                            <constraint firstItem="Lo8-QP-sc3" firstAttribute="leading" secondItem="VlN-fB-dJS" secondAttribute="trailing" constant="77" id="iX9-Vl-lma"/>
+                            <constraint firstItem="Lo8-QP-sc3" firstAttribute="top" secondItem="gks-kM-3TI" secondAttribute="bottom" constant="69" id="o2S-XR-TVO"/>
                             <constraint firstItem="gks-kM-3TI" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ir7-Z3-vbS" secondAttribute="trailing" constant="87" id="vLL-I5-BFT"/>
                             <constraint firstItem="Ir7-Z3-vbS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="yT3-1a-to8"/>
                         </constraints>

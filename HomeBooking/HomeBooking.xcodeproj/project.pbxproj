@@ -10,6 +10,7 @@
 		2B093DB824F5F70E0028820F /* HBCheckout2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DB724F5F70E0028820F /* HBCheckout2.swift */; };
 		2B093DBA24F612C00028820F /* HBDatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DB924F612C00028820F /* HBDatePickerTextField.swift */; };
 		2B093DBC24F612DF0028820F /* HBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DBB24F612DF0028820F /* HBTextField.swift */; };
+		2B1A638024F8A84B0023422F /* CodableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A637F24F8A84B0023422F /* CodableExample.swift */; };
 		2B1BB0A024F4A8F00074ED6B /* HBPaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB09F24F4A8F00074ED6B /* HBPaddingTextField.swift */; };
 		2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */; };
 		2B1BB0A824F4B8960074ED6B /* HBInputNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B1BB0A624F4B8960074ED6B /* HBInputNumberTableViewCell.xib */; };
@@ -19,6 +20,15 @@
 		2B52D7EF24F5012F00D8FF1A /* HBUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D7ED24F5012F00D8FF1A /* HBUserTableViewCell.xib */; };
 		2B52D7F324F51F3500D8FF1A /* HBCheckout2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D7F224F51F3500D8FF1A /* HBCheckout2.storyboard */; };
 		2B52D7F724F5210500D8FF1A /* HBCheckout2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52D7F624F5210500D8FF1A /* HBCheckout2ViewController.swift */; };
+		2B81311324F8F73E00C786DF /* HBNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81311224F8F73E00C786DF /* HBNotice.swift */; };
+		2BA2ECD024F7A2FA009512BB /* HBNotice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA2ECCF24F7A2FA009512BB /* HBNotice.storyboard */; };
+		2BA2ECD224F7A359009512BB /* HBNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2ECD124F7A359009512BB /* HBNoticeViewController.swift */; };
+		2BA2ECD624F7A40E009512BB /* HBNoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2ECD424F7A40E009512BB /* HBNoticeTableViewCell.swift */; };
+		2BA2ECD724F7A40E009512BB /* HBNoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA2ECD524F7A40E009512BB /* HBNoticeTableViewCell.xib */; };
+		2BA2ECDA24F7A7E1009512BB /* HBNoticeHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2ECD824F7A7E1009512BB /* HBNoticeHeaderTableViewCell.swift */; };
+		2BA2ECDB24F7A7E1009512BB /* HBNoticeHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA2ECD924F7A7E1009512BB /* HBNoticeHeaderTableViewCell.xib */; };
+		2BA2ECDF24F7AFB9009512BB /* HBUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2ECDE24F7AFB9009512BB /* HBUserDefault.swift */; };
+		2BA2ECE624F7DDB5009512BB /* GenericXXX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2ECE524F7DDB5009512BB /* GenericXXX.swift */; };
 		2BA972A524F213E300419967 /* HBCheckout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA972A424F213E300419967 /* HBCheckout.storyboard */; };
 		2BA972A724F2140200419967 /* HBCheckout1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972A624F2140200419967 /* HBCheckout1ViewController.swift */; };
 		2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */; };
@@ -51,6 +61,7 @@
 		2B093DB724F5F70E0028820F /* HBCheckout2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckout2.swift; sourceTree = "<group>"; };
 		2B093DB924F612C00028820F /* HBDatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBDatePickerTextField.swift; sourceTree = "<group>"; };
 		2B093DBB24F612DF0028820F /* HBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBTextField.swift; sourceTree = "<group>"; };
+		2B1A637F24F8A84B0023422F /* CodableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExample.swift; sourceTree = "<group>"; };
 		2B1BB09F24F4A8F00074ED6B /* HBPaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBPaddingTextField.swift; sourceTree = "<group>"; };
 		2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBInputNumberTableViewCell.swift; sourceTree = "<group>"; };
 		2B1BB0A624F4B8960074ED6B /* HBInputNumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBInputNumberTableViewCell.xib; sourceTree = "<group>"; };
@@ -60,6 +71,15 @@
 		2B52D7ED24F5012F00D8FF1A /* HBUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBUserTableViewCell.xib; sourceTree = "<group>"; };
 		2B52D7F224F51F3500D8FF1A /* HBCheckout2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBCheckout2.storyboard; sourceTree = "<group>"; };
 		2B52D7F624F5210500D8FF1A /* HBCheckout2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckout2ViewController.swift; sourceTree = "<group>"; };
+		2B81311224F8F73E00C786DF /* HBNotice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBNotice.swift; sourceTree = "<group>"; };
+		2BA2ECCF24F7A2FA009512BB /* HBNotice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBNotice.storyboard; sourceTree = "<group>"; };
+		2BA2ECD124F7A359009512BB /* HBNoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBNoticeViewController.swift; sourceTree = "<group>"; };
+		2BA2ECD424F7A40E009512BB /* HBNoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBNoticeTableViewCell.swift; sourceTree = "<group>"; };
+		2BA2ECD524F7A40E009512BB /* HBNoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBNoticeTableViewCell.xib; sourceTree = "<group>"; };
+		2BA2ECD824F7A7E1009512BB /* HBNoticeHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBNoticeHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		2BA2ECD924F7A7E1009512BB /* HBNoticeHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBNoticeHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		2BA2ECDE24F7AFB9009512BB /* HBUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBUserDefault.swift; sourceTree = "<group>"; };
+		2BA2ECE524F7DDB5009512BB /* GenericXXX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericXXX.swift; sourceTree = "<group>"; };
 		2BA972A424F213E300419967 /* HBCheckout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBCheckout.storyboard; sourceTree = "<group>"; };
 		2BA972A624F2140200419967 /* HBCheckout1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckout1ViewController.swift; sourceTree = "<group>"; };
 		2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout1TableViewCell.swift; sourceTree = "<group>"; };
@@ -144,6 +164,28 @@
 			path = ScreenCheckout2;
 			sourceTree = "<group>";
 		};
+		2BA2ECCE24F7A2BF009512BB /* ScreenNotification */ = {
+			isa = PBXGroup;
+			children = (
+				2BA2ECD324F7A3B4009512BB /* NoticeTableViewCell */,
+				2BA2ECCF24F7A2FA009512BB /* HBNotice.storyboard */,
+				2BA2ECD124F7A359009512BB /* HBNoticeViewController.swift */,
+				2BA2ECE524F7DDB5009512BB /* GenericXXX.swift */,
+			);
+			path = ScreenNotification;
+			sourceTree = "<group>";
+		};
+		2BA2ECD324F7A3B4009512BB /* NoticeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2BA2ECD424F7A40E009512BB /* HBNoticeTableViewCell.swift */,
+				2BA2ECD524F7A40E009512BB /* HBNoticeTableViewCell.xib */,
+				2BA2ECD824F7A7E1009512BB /* HBNoticeHeaderTableViewCell.swift */,
+				2BA2ECD924F7A7E1009512BB /* HBNoticeHeaderTableViewCell.xib */,
+			);
+			path = NoticeTableViewCell;
+			sourceTree = "<group>";
+		};
 		2BA972A324F213A900419967 /* TableViewCheckout */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +230,7 @@
 		2BEA193F24EF611C00A26CF9 /* HomeBooking */ = {
 			isa = PBXGroup;
 			children = (
+				2BA2ECCE24F7A2BF009512BB /* ScreenNotification */,
 				2B52D7F024F51F0000D8FF1A /* ScreenCheckout2 */,
 				2B52D7E624F4FF8A00D8FF1A /* TableViewUser */,
 				2B1BB09E24F4A8CC0074ED6B /* CustomViews */,
@@ -209,10 +252,13 @@
 		2BEA195424EF618E00A26CF9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2BA2ECDE24F7AFB9009512BB /* HBUserDefault.swift */,
 				2BEA195524EF61B300A26CF9 /* HBFilter.swift */,
 				2BEA197124EFD0B200A26CF9 /* SampleData.swift */,
 				2BA972AD24F21C0C00419967 /* HBCheckoutModel.swift */,
 				2B093DB724F5F70E0028820F /* HBCheckout2.swift */,
+				2B1A637F24F8A84B0023422F /* CodableExample.swift */,
+				2B81311224F8F73E00C786DF /* HBNotice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,7 +371,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BA972A524F213E300419967 /* HBCheckout.storyboard in Resources */,
+				2BA2ECD024F7A2FA009512BB /* HBNotice.storyboard in Resources */,
 				2B1BB0A824F4B8960074ED6B /* HBInputNumberTableViewCell.xib in Resources */,
+				2BA2ECD724F7A40E009512BB /* HBNoticeTableViewCell.xib in Resources */,
+				2BA2ECDB24F7A7E1009512BB /* HBNoticeHeaderTableViewCell.xib in Resources */,
 				2BEA196E24EFCAD300A26CF9 /* SwichTableViewCell.xib in Resources */,
 				2BEA195F24EF8C9700A26CF9 /* Todo.txt in Resources */,
 				2BEA196A24EFCAAF00A26CF9 /* SelectedTableViewCell.xib in Resources */,
@@ -396,7 +445,10 @@
 				2BEA194524EF611C00A26CF9 /* ViewController.swift in Sources */,
 				2BEA195624EF61B300A26CF9 /* HBFilter.swift in Sources */,
 				2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */,
+				2BA2ECDA24F7A7E1009512BB /* HBNoticeHeaderTableViewCell.swift in Sources */,
+				2BA2ECD624F7A40E009512BB /* HBNoticeTableViewCell.swift in Sources */,
 				2BEA194124EF611C00A26CF9 /* AppDelegate.swift in Sources */,
+				2BA2ECDF24F7AFB9009512BB /* HBUserDefault.swift in Sources */,
 				2BD5CC6424F6203200148FF5 /* HBNumberTextField.swift in Sources */,
 				2BD5CC6624F6508000148FF5 /* XViewController.swift in Sources */,
 				2BEA194324EF611C00A26CF9 /* SceneDelegate.swift in Sources */,
@@ -405,12 +457,16 @@
 				2BEA196D24EFCAD300A26CF9 /* SwichTableViewCell.swift in Sources */,
 				2BEA196924EFCAAF00A26CF9 /* SelectedTableViewCell.swift in Sources */,
 				2BEA196324EFCA3A00A26CF9 /* HBFilterViewController.swift in Sources */,
+				2B1A638024F8A84B0023422F /* CodableExample.swift in Sources */,
+				2BA2ECE624F7DDB5009512BB /* GenericXXX.swift in Sources */,
+				2B81311324F8F73E00C786DF /* HBNotice.swift in Sources */,
 				2B52D7F724F5210500D8FF1A /* HBCheckout2ViewController.swift in Sources */,
 				2BEA197224EFD0B200A26CF9 /* SampleData.swift in Sources */,
 				2BA972AE24F21C0C00419967 /* HBCheckoutModel.swift in Sources */,
 				2BA972A724F2140200419967 /* HBCheckout1ViewController.swift in Sources */,
 				2B52D7EA24F5008F00D8FF1A /* HBUserViewController.swift in Sources */,
 				2B093DBA24F612C00028820F /* HBDatePickerTextField.swift in Sources */,
+				2BA2ECD224F7A359009512BB /* HBNoticeViewController.swift in Sources */,
 				2BEA195C24EF66EB00A26CF9 /* FilterViewController.swift in Sources */,
 				2B093DBC24F612DF0028820F /* HBTextField.swift in Sources */,
 			);

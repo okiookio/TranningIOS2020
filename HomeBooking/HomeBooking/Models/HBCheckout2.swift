@@ -8,12 +8,13 @@
 
 import Foundation
 
-struct HBCheckout2 {
-    var cardNumber : String?
-    var expiry : String?
-    var cvv : String?
-    var name : String?
+struct HBCheckout2: Codable {
+    var cardNumber: String?
+    var expiry: String?
+    var cvv: String?
+    var name: String?
 }
+
 extension HBCheckout2 {
     func displayCardNumber() -> String? {
         return cardNumber
@@ -27,5 +28,14 @@ extension HBCheckout2 {
     func displayName() -> String? {
         return name
     }
-    
+
+}
+extension HBCheckout2 {
+    var isVisa: Bool {
+        guard let number = cardNumber, number.count > 0, number.count <= 16 else { return false }
+        guard let ex = expiry, !ex.isEmpty else { return false }
+        guard let c = cvv, c.count > 0, c.count <= 16 else { return false }
+        guard let n = name, !n.isEmpty else { return false }
+        return true
+    }
 }

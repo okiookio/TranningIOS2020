@@ -81,3 +81,4 @@ extension HBInputNumberTableViewCell: UITextFieldDelegate {
     }
 }
 
+extension HBInputNumberTableViewCell: Reusable {}

@@ -6,9 +6,15 @@
 //  Copyright © 2020 helIgate. All rights reserved.
 //
 - Aug 27, 2020
+
+
+
 1, UIPageViewController
 2, Custom introduction 3 man hinh
+
 3, Tìm hiểu NSUserDefault ( UserDefault )
+- Kiến thức tìm hiểu được : ScreenNotification/HBUserDefault.swift
+
 4,  Xây dựng màn notification.
 
 - Aug 26, 2020
