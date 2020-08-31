@@ -64,6 +64,13 @@
                                     <action selector="goToNotice" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyn-0z-3Su"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hci-Qy-K0J">
+                                <rect key="frame" x="43" y="318" width="84" height="30"/>
+                                <state key="normal" title="UICollection"/>
+                                <connections>
+                                    <action selector="goToUICollectionView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fq-YG-psb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -73,12 +80,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ir7-Z3-vbS" secondAttribute="trailing" constant="182" id="8Q3-0Q-kcQ"/>
                             <constraint firstItem="SI6-2i-NsA" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8iU-g4-i4c"/>
                             <constraint firstItem="VlN-fB-dJS" firstAttribute="top" secondItem="Ir7-Z3-vbS" secondAttribute="bottom" constant="69" id="9Kk-VQ-YVi"/>
+                            <constraint firstItem="hci-Qy-K0J" firstAttribute="top" secondItem="SI6-2i-NsA" secondAttribute="bottom" constant="53" id="ARI-Ks-IDH"/>
                             <constraint firstItem="SI6-2i-NsA" firstAttribute="top" secondItem="Pz8-tz-opX" secondAttribute="bottom" constant="62" id="DnU-0X-boc"/>
                             <constraint firstItem="gks-kM-3TI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="ECe-wM-Mbg"/>
                             <constraint firstItem="Pz8-tz-opX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="KBh-Ge-f6H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lo8-QP-sc3" secondAttribute="trailing" constant="73" id="QSs-Ps-6hg"/>
                             <constraint firstItem="VlN-fB-dJS" firstAttribute="leading" secondItem="SI6-2i-NsA" secondAttribute="trailing" constant="56" id="Woe-mL-jqy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="gks-kM-3TI" secondAttribute="trailing" constant="20" id="ayl-8C-o4A"/>
+                            <constraint firstItem="hci-Qy-K0J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="g97-Ad-Q4G"/>
                             <constraint firstItem="Lo8-QP-sc3" firstAttribute="leading" secondItem="VlN-fB-dJS" secondAttribute="trailing" constant="77" id="iX9-Vl-lma"/>
                             <constraint firstItem="Lo8-QP-sc3" firstAttribute="top" secondItem="gks-kM-3TI" secondAttribute="bottom" constant="69" id="o2S-XR-TVO"/>
                             <constraint firstItem="gks-kM-3TI" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ir7-Z3-vbS" secondAttribute="trailing" constant="87" id="vLL-I5-BFT"/>

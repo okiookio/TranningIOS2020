@@ -10,6 +10,7 @@
 		2B093DB824F5F70E0028820F /* HBCheckout2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DB724F5F70E0028820F /* HBCheckout2.swift */; };
 		2B093DBA24F612C00028820F /* HBDatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DB924F612C00028820F /* HBDatePickerTextField.swift */; };
 		2B093DBC24F612DF0028820F /* HBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DBB24F612DF0028820F /* HBTextField.swift */; };
+		2B19A0AA24FC987900140EA8 /* HBHigherOrderFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19A0A924FC987900140EA8 /* HBHigherOrderFunctions.swift */; };
 		2B1A638024F8A84B0023422F /* CodableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A637F24F8A84B0023422F /* CodableExample.swift */; };
 		2B1BB0A024F4A8F00074ED6B /* HBPaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB09F24F4A8F00074ED6B /* HBPaddingTextField.swift */; };
 		2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */; };
@@ -34,6 +35,10 @@
 		2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */; };
 		2BA972AC24F2172400419967 /* Checkout1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BA972AA24F2172400419967 /* Checkout1TableViewCell.xib */; };
 		2BA972AE24F21C0C00419967 /* HBCheckoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA972AD24F21C0C00419967 /* HBCheckoutModel.swift */; };
+		2BD3FA2924FCD4C80022706D /* HBUICollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD3FA2824FCD4C80022706D /* HBUICollectionView.storyboard */; };
+		2BD3FA2B24FCD5540022706D /* HBUICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD3FA2A24FCD5540022706D /* HBUICollectionViewController.swift */; };
+		2BD3FA2F24FCD6E00022706D /* HBCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD3FA2D24FCD6E00022706D /* HBCollectionViewCell.swift */; };
+		2BD3FA3024FCD6E00022706D /* HBCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD3FA2E24FCD6E00022706D /* HBCollectionViewCell.xib */; };
 		2BD5CC6424F6203200148FF5 /* HBNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5CC6324F6203200148FF5 /* HBNumberTextField.swift */; };
 		2BD5CC6624F6508000148FF5 /* XViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD5CC6524F6508000148FF5 /* XViewController.swift */; };
 		2BE8849924F1230400DCAF8C /* HoangKimtoiStudy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BE8849824F1230400DCAF8C /* HoangKimtoiStudy.txt */; };
@@ -61,6 +66,7 @@
 		2B093DB724F5F70E0028820F /* HBCheckout2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckout2.swift; sourceTree = "<group>"; };
 		2B093DB924F612C00028820F /* HBDatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBDatePickerTextField.swift; sourceTree = "<group>"; };
 		2B093DBB24F612DF0028820F /* HBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBTextField.swift; sourceTree = "<group>"; };
+		2B19A0A924FC987900140EA8 /* HBHigherOrderFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBHigherOrderFunctions.swift; sourceTree = "<group>"; };
 		2B1A637F24F8A84B0023422F /* CodableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExample.swift; sourceTree = "<group>"; };
 		2B1BB09F24F4A8F00074ED6B /* HBPaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBPaddingTextField.swift; sourceTree = "<group>"; };
 		2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBInputNumberTableViewCell.swift; sourceTree = "<group>"; };
@@ -85,6 +91,10 @@
 		2BA972A924F2172400419967 /* Checkout1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkout1TableViewCell.swift; sourceTree = "<group>"; };
 		2BA972AA24F2172400419967 /* Checkout1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Checkout1TableViewCell.xib; sourceTree = "<group>"; };
 		2BA972AD24F21C0C00419967 /* HBCheckoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckoutModel.swift; sourceTree = "<group>"; };
+		2BD3FA2824FCD4C80022706D /* HBUICollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBUICollectionView.storyboard; sourceTree = "<group>"; };
+		2BD3FA2A24FCD5540022706D /* HBUICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBUICollectionViewController.swift; sourceTree = "<group>"; };
+		2BD3FA2D24FCD6E00022706D /* HBCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCollectionViewCell.swift; sourceTree = "<group>"; };
+		2BD3FA2E24FCD6E00022706D /* HBCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBCollectionViewCell.xib; sourceTree = "<group>"; };
 		2BD5CC6324F6203200148FF5 /* HBNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBNumberTextField.swift; sourceTree = "<group>"; };
 		2BD5CC6524F6508000148FF5 /* XViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XViewController.swift; sourceTree = "<group>"; };
 		2BE8849824F1230400DCAF8C /* HoangKimtoiStudy.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = HoangKimtoiStudy.txt; sourceTree = "<group>"; };
@@ -124,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B19A0A824FC982800140EA8 /* HigherOrderFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				2B19A0A924FC987900140EA8 /* HBHigherOrderFunctions.swift */,
+			);
+			path = HigherOrderFunctions;
+			sourceTree = "<group>";
+		};
 		2B1BB09E24F4A8CC0074ED6B /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +225,25 @@
 			path = CheckoutTableViewCell;
 			sourceTree = "<group>";
 		};
+		2BD3FA2724FCD49C0022706D /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2BD3FA2C24FCD6A10022706D /* UICollectionViewCell */,
+				2BD3FA2824FCD4C80022706D /* HBUICollectionView.storyboard */,
+				2BD3FA2A24FCD5540022706D /* HBUICollectionViewController.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		2BD3FA2C24FCD6A10022706D /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2BD3FA2D24FCD6E00022706D /* HBCollectionViewCell.swift */,
+				2BD3FA2E24FCD6E00022706D /* HBCollectionViewCell.xib */,
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
 		2BEA193424EF611C00A26CF9 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +267,7 @@
 		2BEA193F24EF611C00A26CF9 /* HomeBooking */ = {
 			isa = PBXGroup;
 			children = (
+				2BD3FA2724FCD49C0022706D /* UICollectionView */,
 				2BA2ECCE24F7A2BF009512BB /* ScreenNotification */,
 				2B52D7F024F51F0000D8FF1A /* ScreenCheckout2 */,
 				2B52D7E624F4FF8A00D8FF1A /* TableViewUser */,
@@ -238,6 +276,7 @@
 				2BEA196024EFCA0500A26CF9 /* TableFilter */,
 				2BEA195924EF66A900A26CF9 /* Filter */,
 				2BEA195424EF618E00A26CF9 /* Models */,
+				2B19A0A824FC982800140EA8 /* HigherOrderFunctions */,
 				2BEA194024EF611C00A26CF9 /* AppDelegate.swift */,
 				2BEA194224EF611C00A26CF9 /* SceneDelegate.swift */,
 				2BEA194424EF611C00A26CF9 /* ViewController.swift */,
@@ -372,6 +411,7 @@
 			files = (
 				2BA972A524F213E300419967 /* HBCheckout.storyboard in Resources */,
 				2BA2ECD024F7A2FA009512BB /* HBNotice.storyboard in Resources */,
+				2BD3FA3024FCD6E00022706D /* HBCollectionViewCell.xib in Resources */,
 				2B1BB0A824F4B8960074ED6B /* HBInputNumberTableViewCell.xib in Resources */,
 				2BA2ECD724F7A40E009512BB /* HBNoticeTableViewCell.xib in Resources */,
 				2BA2ECDB24F7A7E1009512BB /* HBNoticeHeaderTableViewCell.xib in Resources */,
@@ -384,6 +424,7 @@
 				2BEA195D24EF66EB00A26CF9 /* FilterViewController.xib in Resources */,
 				2B52D7F324F51F3500D8FF1A /* HBCheckout2.storyboard in Resources */,
 				2BEA196424EFCA3A00A26CF9 /* HBFilterViewController.xib in Resources */,
+				2BD3FA2924FCD4C80022706D /* HBUICollectionView.storyboard in Resources */,
 				2BE8849924F1230400DCAF8C /* HoangKimtoiStudy.txt in Resources */,
 				2B52D7E824F5006700D8FF1A /* HBUser.storyboard in Resources */,
 				2B52D7EF24F5012F00D8FF1A /* HBUserTableViewCell.xib in Resources */,
@@ -446,15 +487,18 @@
 				2BEA195624EF61B300A26CF9 /* HBFilter.swift in Sources */,
 				2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */,
 				2BA2ECDA24F7A7E1009512BB /* HBNoticeHeaderTableViewCell.swift in Sources */,
+				2BD3FA2F24FCD6E00022706D /* HBCollectionViewCell.swift in Sources */,
 				2BA2ECD624F7A40E009512BB /* HBNoticeTableViewCell.swift in Sources */,
 				2BEA194124EF611C00A26CF9 /* AppDelegate.swift in Sources */,
 				2BA2ECDF24F7AFB9009512BB /* HBUserDefault.swift in Sources */,
+				2BD3FA2B24FCD5540022706D /* HBUICollectionViewController.swift in Sources */,
 				2BD5CC6424F6203200148FF5 /* HBNumberTextField.swift in Sources */,
 				2BD5CC6624F6508000148FF5 /* XViewController.swift in Sources */,
 				2BEA194324EF611C00A26CF9 /* SceneDelegate.swift in Sources */,
 				2B1BB0A024F4A8F00074ED6B /* HBPaddingTextField.swift in Sources */,
 				2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */,
 				2BEA196D24EFCAD300A26CF9 /* SwichTableViewCell.swift in Sources */,
+				2B19A0AA24FC987900140EA8 /* HBHigherOrderFunctions.swift in Sources */,
 				2BEA196924EFCAAF00A26CF9 /* SelectedTableViewCell.swift in Sources */,
 				2BEA196324EFCA3A00A26CF9 /* HBFilterViewController.swift in Sources */,
 				2B1A638024F8A84B0023422F /* CodableExample.swift in Sources */,

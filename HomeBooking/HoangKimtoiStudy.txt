@@ -5,6 +5,12 @@
 //  Created by helIgate on 8/22/20.
 //  Copyright © 2020 helIgate. All rights reserved.
 //
+- Aug 31, 2020
+1, Tìm hiểu Higher order function : Map, filter, sorted, allSatisfy...
+-> HigherOrderFunction/HBHigherOrderFunction
+2, Tìm hiểu và xây dựng UICollectionView
+3, Custom UICollectionViewCell
+
 - Aug 28, 2020
 1, Hoàn thành màn Notification
 2, Lưu object bằng userDefault có sử dụng hàm generic

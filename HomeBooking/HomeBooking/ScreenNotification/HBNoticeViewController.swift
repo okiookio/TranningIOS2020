@@ -38,18 +38,9 @@ class HBNoticeViewController: UIViewController {
         let notSeen = arrNotice.filter({ $0.seen == false }).map({ $0.id }).compactMap({ $0 })
         self.didTouchBack?(notSeen)
 
-        let listId = arrNotice.map { (notice) -> Int? in
+        let _ = arrNotice.map { (notice) -> Int? in
             return notice.id
         }.compactMap({ $0 })
-        
-//        0 < A < 100
-        
-        // if neu a > 100  thi a = 100
-        // else a < 0 thi a = 0
-        var a = 800
-        a = min(max(0, a), 100)
-        
-        
     }
 }
 

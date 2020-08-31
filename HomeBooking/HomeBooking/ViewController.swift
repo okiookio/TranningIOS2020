@@ -16,26 +16,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
-//        let data = HBUserdefault.shared.getObjectData(forKey: "saveDataCheckout2", type: HBCheckout2.self)
-//        guard let value = data else { return }
-//        print(value)
-//
-//        let encode = CodableExample.constaint.encode(value)
-//        print(encode ?? "")
-//        let decode = CodableExample.constaint.decode(data: encode!, type: HBCheckout2.self)
-//        print(decode ?? "")
-//
-//        let dictionary = [
-//            "A" : 1,
-//            "B" : 2,
-//            "C" : 3
-//        ]
-//
-//        HBUserdefault.shared.setObjectData(dictionary, forKey: "dictionary")
-//        var string = HBUserdefault.shared.getObjectData(forKey: "dictionary", type: [String:Int].self)
-//        string!["A"] = 4
-//        print(string ?? "")
-
+//        let orderFunctions = HBHigherOrderFunctions.share
+//        orderFunctions.map()
+//        orderFunctions.compactMap()
+//        orderFunctions.filter()
+//        orderFunctions.reduce()
+//        print(orderFunctions.contains())
+//        orderFunctions.removeAll()
+//        orderFunctions.sorted()
+//        orderFunctions.split()
+//        orderFunctions.allSatisfy()
+//        orderFunctions.partition()
+//        orderFunctions.firstIndex()
+        
     }
 
     @IBAction func goToFilter(_ sender: Any) {
@@ -106,6 +99,13 @@ class ViewController: UIViewController {
         vc.didTouchBack = { [weak self] (arr) in
             print(arr)
         }
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func goToUICollectionView(_ sender: Any) {
+        let storybroad : UIStoryboard = UIStoryboard(name: "HBUICollectionView", bundle: nil)
+        let vc = storybroad.instantiateViewController(identifier: "UICollectionView") as! HBUICollectionViewController
+        
         navigationController?.pushViewController(vc, animated: true)
     }
 }
