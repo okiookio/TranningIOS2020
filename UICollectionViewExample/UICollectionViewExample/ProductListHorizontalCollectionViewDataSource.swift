@@ -9,20 +9,24 @@
 import UIKit
 
 class ProductListHorizontalCollectionViewDataSource: NSObject {
-    private weak var collectionView: UICollectionView! {
-        didSet {
-            configSubsView()
-        }
-    }
+    private weak var collectionView: UICollectionView!
 
-    init(collectionView: UICollectionView) {
+    init(collectionView: UICollectionView,
+         spacingSection: CGFloat = 8.0,
+         spacingCell: CGFloat = 8.0,
+         cellRatio: CGFloat = 338 / 289) {
+        super.init()
         self.collectionView = collectionView
+        self.spacingSection = spacingSection
+        self.spacingCell = spacingCell
+        self.cellRatio = cellRatio
+        self.configSubsView()
     }
 
-    private var itemProduct: [ProductItemProtocol] = []
+    private var items: [ProductItemProtocol] = []
 
     private func configSubsView() {
-        collectionView.register(UINib(nibName: "ProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "productCell")
+        collectionView.register(UINib(nibName: "ProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ProductCollectionViewCell")
 
         let layout = UICollectionViewFlowLayout()
 
@@ -42,24 +46,23 @@ class ProductListHorizontalCollectionViewDataSource: NSObject {
 
     func bind(data: Any) {
         let data = data as? [ProductItemProtocol]
-        self.itemProduct = data ?? []
+        self.items = data ?? []
         collectionView.reloadData()
     }
+    var didSelectAt:((_ indexPath: IndexPath,_ item: ProductItemProtocol) -> Void)?
 }
 
 extension ProductListHorizontalCollectionViewDataSource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return itemProduct.count
+        return items.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "productCell", for: indexPath) as? ProductCollectionViewCell else { return UICollectionViewCell() }
-        let item = itemProduct[indexPath.row]
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCollectionViewCell", for: indexPath) as? ProductCollectionViewCell else { return UICollectionViewCell() }
+        let item = items[indexPath.row]
         cell.bindData(item)
         return cell
     }
-
-
 }
 
 extension ProductListHorizontalCollectionViewDataSource: UICollectionViewDelegateFlowLayout {
@@ -85,5 +88,8 @@ extension ProductListHorizontalCollectionViewDataSource: UICollectionViewDelegat
 }
 
 extension ProductListHorizontalCollectionViewDataSource: UICollectionViewDelegate {
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        didSelectAt?(indexPath, item)
+    }
 }

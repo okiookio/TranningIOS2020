@@ -23,12 +23,12 @@ class MainViewController: BaseViewController {
         collectionView.reloadData()
 
     }
-    
+
     override func configSubviews() {
         super.configSubviews()
         collectionView.register(UINib(nibName: "ListProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ListProductCollectionViewCell")
         collectionView.backgroundColor = .white
-        
+
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -74,6 +74,12 @@ class MainViewController: BaseViewController {
 
     private var spacingSection: CGFloat = 8
     private var spacingRow: CGFloat = 8
+
+    var didSelectTemplateItem: ((TemplateItem) -> Void)?
+    var didSelectProductItem: ((ProductItem) -> Void)?
+    var didSelectFoodAndDrinkItem: ((FoodAndDrinkItem) -> Void)?
+    var didSelectThankYouGiftItem: ((ThankYouGiftItem) -> Void)?
+
 }
 
 extension MainViewController: UICollectionViewDataSource {
@@ -89,15 +95,31 @@ extension MainViewController: UICollectionViewDataSource {
         let section = MainSection(rawValue: indexPath.section)
         switch section {
         case .templates:
+            cell.didSelectedAt = { [weak self] (index, item) in
+                guard let selectedItem = item as? TemplateItem else { return }
+                self?.didSelectTemplateItem?(selectedItem)
+            }
             cell.bind(data: templates)
         case .products:
+            cell.didSelectedAt = { [weak self] (index, item) in
+                guard let selectedItem = item as? ProductItem else { return }
+                self?.didSelectProductItem?(selectedItem)
+            }
             cell.bind(data: products)
         case .foodAndDrinks:
+            cell.didSelectedAt = { [weak self] (index, item) in
+                guard let selectedItem = item as? FoodAndDrinkItem else { return }
+                self?.didSelectFoodAndDrinkItem?(selectedItem)
+            }
             cell.bind(data: foodAndDrinks)
         case .thankYouGifts:
+            cell.didSelectedAt = { [weak self] (index, item) in
+                guard let selectedItem = item as? ThankYouGiftItem else { return }
+                self?.didSelectThankYouGiftItem?(selectedItem)
+            }
             cell.bind(data: thankYouGifts)
         case .none:
-            break
+            return UICollectionViewCell()
         }
         return cell
     }
