@@ -6,6 +6,7 @@ target 'HomeBooking' do
   use_frameworks!
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftDate'
+  pod 'WSTagsField'
   # Pods for HomeBooking
 
 end

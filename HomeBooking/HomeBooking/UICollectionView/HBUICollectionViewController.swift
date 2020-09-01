@@ -16,7 +16,7 @@ import UIKit
 class HBUICollectionViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    private let notice: [HBNotice] = HBNotice.genericRamdom(count: 50, titleCount: 10)
+    private let notice: [HBNotice] = HBNotice.genericRamdom(count: 10, titleCount: 10)
     private let layout = UICollectionViewFlowLayout()
     var statusBarOrientation: UIInterfaceOrientation? {
         get {

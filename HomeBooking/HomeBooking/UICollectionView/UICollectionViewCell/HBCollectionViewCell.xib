@@ -25,13 +25,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Var-2H-1Ve">
+                                <rect key="frame" x="16" y="90" width="136" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Var-2H-1Ve" firstAttribute="leading" secondItem="Zln-Rm-lsK" secondAttribute="leading" constant="16" id="Nhy-V4-Fml"/>
+                            <constraint firstItem="Var-2H-1Ve" firstAttribute="top" secondItem="GbW-3F-yT3" secondAttribute="bottom" constant="8" id="dcs-cN-fIL"/>
                             <constraint firstItem="GbW-3F-yT3" firstAttribute="leading" secondItem="Zln-Rm-lsK" secondAttribute="leading" constant="16" id="eWq-7Y-V5x"/>
                             <constraint firstItem="GbW-3F-yT3" firstAttribute="centerX" secondItem="Zln-Rm-lsK" secondAttribute="centerX" id="gz1-fg-WIE"/>
                             <constraint firstAttribute="trailing" secondItem="GbW-3F-yT3" secondAttribute="trailing" constant="16" id="otq-Ua-exa"/>
                             <constraint firstItem="GbW-3F-yT3" firstAttribute="centerY" secondItem="Zln-Rm-lsK" secondAttribute="centerY" id="x9s-gE-cyt"/>
+                            <constraint firstAttribute="trailing" secondItem="Var-2H-1Ve" secondAttribute="trailing" constant="16" id="xkb-ik-jo2"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -46,9 +54,10 @@
             <size key="customSize" width="176" height="155"/>
             <connections>
                 <outlet property="containtView" destination="Zln-Rm-lsK" id="z3m-2X-Cwf"/>
+                <outlet property="tagTextField" destination="Var-2H-1Ve" id="9rh-qU-BsC"/>
                 <outlet property="titleLabel" destination="GbW-3F-yT3" id="t3L-Ee-2lr"/>
             </connections>
-            <point key="canvasLocation" x="140.57971014492756" y="159.04017857142856"/>
+            <point key="canvasLocation" x="-54" y="105"/>
         </collectionViewCell>
     </objects>
 </document>

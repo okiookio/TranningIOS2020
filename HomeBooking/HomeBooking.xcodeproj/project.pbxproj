@@ -11,6 +11,7 @@
 		2B093DBA24F612C00028820F /* HBDatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DB924F612C00028820F /* HBDatePickerTextField.swift */; };
 		2B093DBC24F612DF0028820F /* HBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B093DBB24F612DF0028820F /* HBTextField.swift */; };
 		2B19A0AA24FC987900140EA8 /* HBHigherOrderFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19A0A924FC987900140EA8 /* HBHigherOrderFunctions.swift */; };
+		2B19D03B24FDECF300AB8FDD /* SOLID.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2B19D03A24FDECF300AB8FDD /* SOLID.txt */; };
 		2B1A638024F8A84B0023422F /* CodableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A637F24F8A84B0023422F /* CodableExample.swift */; };
 		2B1BB0A024F4A8F00074ED6B /* HBPaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB09F24F4A8F00074ED6B /* HBPaddingTextField.swift */; };
 		2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */; };
@@ -67,6 +68,7 @@
 		2B093DB924F612C00028820F /* HBDatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBDatePickerTextField.swift; sourceTree = "<group>"; };
 		2B093DBB24F612DF0028820F /* HBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBTextField.swift; sourceTree = "<group>"; };
 		2B19A0A924FC987900140EA8 /* HBHigherOrderFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBHigherOrderFunctions.swift; sourceTree = "<group>"; };
+		2B19D03A24FDECF300AB8FDD /* SOLID.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SOLID.txt; sourceTree = "<group>"; };
 		2B1A637F24F8A84B0023422F /* CodableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExample.swift; sourceTree = "<group>"; };
 		2B1BB09F24F4A8F00074ED6B /* HBPaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBPaddingTextField.swift; sourceTree = "<group>"; };
 		2B1BB0A524F4B8960074ED6B /* HBInputNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBInputNumberTableViewCell.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		2BEA193424EF611C00A26CF9 = {
 			isa = PBXGroup;
 			children = (
+				2B19D03A24FDECF300AB8FDD /* SOLID.txt */,
 				2BE8849824F1230400DCAF8C /* HoangKimtoiStudy.txt */,
 				2BEA195E24EF8C9700A26CF9 /* Todo.txt */,
 				2BEA193F24EF611C00A26CF9 /* HomeBooking */,
@@ -421,6 +424,7 @@
 				2BA972AC24F2172400419967 /* Checkout1TableViewCell.xib in Resources */,
 				2BEA194D24EF611F00A26CF9 /* LaunchScreen.storyboard in Resources */,
 				2BEA194A24EF611F00A26CF9 /* Assets.xcassets in Resources */,
+				2B19D03B24FDECF300AB8FDD /* SOLID.txt in Resources */,
 				2BEA195D24EF66EB00A26CF9 /* FilterViewController.xib in Resources */,
 				2B52D7F324F51F3500D8FF1A /* HBCheckout2.storyboard in Resources */,
 				2BEA196424EFCA3A00A26CF9 /* HBFilterViewController.xib in Resources */,

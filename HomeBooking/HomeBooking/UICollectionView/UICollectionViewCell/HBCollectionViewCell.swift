@@ -7,21 +7,29 @@
 //
 
 import UIKit
-
+import WSTagsField
 
 
 class HBCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var containtView: UIView!
-
+    @IBOutlet weak var tagTextField: WSTagsField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         containtView.backgroundColor = .random()
+        configuraTagTextField()
+    }
+    private func configuraTagTextField(){
+//        tagTextField.shouldTokenizeAfterResigningFirstResponder = true
+//        tagTextField.onDidAddTag = { fields, tag in
+//            print("DidAddTag", tag.text)
+//        }
     }
 
-    func bindData(_ text: String?) {
-        guard let title = text else { return }
+    func bindData(_ text: Any?) {
+        guard let title = text as? String else { return }
         titleLabel.text = title
     }
 }

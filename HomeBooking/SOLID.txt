@@ -1,0 +1,18 @@
+//
+//  SOLID.txt
+//  HomeBooking
+//
+//  Created by helIgate on 9/1/20.
+//  Copyright © 2020 helIgate. All rights reserved.
+//
+
+//https://marcosantadev.com/solid-principles-applied-swift/
+//https://viblo.asia/p/solid-principles-and-apply-for-swift-gGJ59WNrZX2
+//https://medium.com/@VincentVuVNG/kh%C3%A1i-ni%E1%BB%87m-solid-trong-swift-fdbd62ec893c
+
+- SOLID Có 5 quy tắc:
++ Single responsibility princeple : Mỗi class chỉ nên thực thiện 1 công việc riêng
++ Open closed principle : Cho phép mở rộng nhưng phải đóng chỉnh sử bên trong
++ Liskov substitution : Lớp con có thể bị thay thế bởi lớp cha
++ Interface segregation : Không lên implenment interface/protocol mà có thành phần không dùng đến
++ Dependency Inversion : Module cấp cao không được phụ thuộc vào module cấp thấp
