@@ -8,12 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    private let itemProduct = ProductItem.genericRamdom(count: 10)
+    private let itemProduct: [ProductItemProtocol] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configSubsView()
+    }
+    private func configSubsView() {
         collectionView.register(UINib(nibName: "ProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "productCell")
 
         let layout = UICollectionViewFlowLayout()
@@ -27,6 +30,10 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
 
     }
+
+    private var spacingSection: CGFloat = 8.0
+    private var spacingCell: CGFloat = 8.0
+    private var cellRatio: CGFloat = 4 / 3
 }
 
 extension ViewController: UICollectionViewDataSource {
@@ -45,17 +52,21 @@ extension ViewController: UICollectionViewDataSource {
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let height = collectionView.frame.height - 8 * 2
-        let width = height * 4 / 3
+        let height = collectionView.frame.height - spacingSection * 2
+        let width = height * cellRatio
         return CGSize(width: width, height: height)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return .init(top: 8, left: 8, bottom: 8, right: 8)
+        return .create(all: spacingSection)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 8
+        return spacingCell
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
@@ -66,3 +77,8 @@ extension ViewController: UICollectionViewDelegate {
 
 }
 
+extension UIEdgeInsets {
+    static func create(all: CGFloat) -> UIEdgeInsets {
+        return .init(top: all, left: all, bottom: all, right: all)
+    }
+}

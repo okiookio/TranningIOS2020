@@ -8,23 +8,30 @@
 
 import UIKit
 
-class ProductCollectionViewCell: UICollectionViewCell {
+class ProductCollectionViewCell: BaseCollectionViewCell {
 
+    @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var thumbnailImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
+    private let kCellRadius: CGFloat = 20
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        containerView.layer.cornerRadius = kCellRadius
+        containerView.clipsToBounds = true
+        
     }
+    
     func bindData(_ data : Any) {
-        guard let data = data as? ProductItem else { return }
-        thumbnailImage.image = UIImage(named: "image")
-        titleLabel.text = data.name
-        descriptionLabel.text = data.description
-        priceLabel.text = String(data.price!)
+        let data = data as? ProductItemProtocol
+        thumbnailImage.loadImage(with: data?.displayThumnail())
+        titleLabel.text = data?.displayName()
+        descriptionLabel.text = data?.displayDescription()
+        priceLabel.text = data?.displayPrice()
     }
 
 }

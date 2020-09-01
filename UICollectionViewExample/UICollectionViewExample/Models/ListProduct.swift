@@ -9,26 +9,43 @@
 import Foundation
 
 struct ListProduct {
-    var templates: String?
-    var product: String?
-    var food: String?
-    var thankyou: String?
+    var templates: [TemplateItem]?
+    var products: [ProductItem]?
+    var foodAndDrink: [FoodAndDrinkItem]?
+    var thankYouGift: [ThankYouGiftItem]?
 }
+
 extension ListProduct {
-    
-    func displaytemplates() -> [ProductItem] {
-        return ProductItem.genericRamdom(count: 10)
+
+    func displayTemplates() -> [TemplateItem]? {
+        return templates
     }
 
-    func displayProduct() -> [ProductItem] {
-        return ProductItem.genericRamdom(count: 10)
+    func displayProduct() -> [ProductItem]? {
+        return products
     }
-    
-    func displayFood() -> [ProductItem] {
-        return ProductItem.genericRamdom(count: 10)
+
+    func displayFoodAndDrink() -> [FoodAndDrinkItem]? {
+        return foodAndDrink
     }
-    
-    func displayThankYou() -> [ProductItem] {
-        return ProductItem.genericRamdom(count: 10)
+
+    func displayThankYouGift() -> [ThankYouGiftItem]? {
+        return thankYouGift
+    }
+}
+
+extension ListProduct {
+    static func dummy() -> ListProduct {
+        return ListProduct(templates: TemplateItem.genericRamdom(),
+                           products: ProductItem.genericRamdom(),
+                           foodAndDrink: FoodAndDrinkItem.genericRamdom(),
+                           thankYouGift: ThankYouGiftItem.genericRamdom())
+    }
+}
+import UIKit
+extension UIImageView {
+    func loadImage(with url: String?) {
+        //TODO: need update: Load image 
+        image = UIImage(named: "image" )
     }
 }

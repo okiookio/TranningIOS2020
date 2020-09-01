@@ -21,6 +21,10 @@
 		2B19D0BE24FE354D00AB8FDD /* ListProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19D0BD24FE354D00AB8FDD /* ListProduct.swift */; };
 		2B19D0C124FE3A7500AB8FDD /* ListProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19D0BF24FE3A7500AB8FDD /* ListProductCollectionViewCell.swift */; };
 		2B19D0C224FE3A7500AB8FDD /* ListProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B19D0C024FE3A7500AB8FDD /* ListProductCollectionViewCell.xib */; };
+		2B19D0C524FE453E00AB8FDD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19D0C424FE453E00AB8FDD /* BaseViewController.swift */; };
+		2B19D0C724FE455B00AB8FDD /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19D0C624FE455B00AB8FDD /* BaseCollectionViewCell.swift */; };
+		2B19D0C924FE464500AB8FDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19D0C824FE464500AB8FDD /* MainViewController.swift */; };
+		2B19D0CB24FE6DE300AB8FDD /* ProductListHorizontalCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B19D0CA24FE6DE300AB8FDD /* ProductListHorizontalCollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		2B19D0BD24FE354D00AB8FDD /* ListProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProduct.swift; sourceTree = "<group>"; };
 		2B19D0BF24FE3A7500AB8FDD /* ListProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		2B19D0C024FE3A7500AB8FDD /* ListProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		2B19D0C424FE453E00AB8FDD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2B19D0C624FE455B00AB8FDD /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		2B19D0C824FE464500AB8FDD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2B19D0CA24FE6DE300AB8FDD /* ProductListHorizontalCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListHorizontalCollectionViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +124,13 @@
 				2B19D08524FE0AD800AB8FDD /* AppDelegate.swift */,
 				2B19D08724FE0AD800AB8FDD /* SceneDelegate.swift */,
 				2B19D08924FE0AD800AB8FDD /* ViewController.swift */,
+				2B19D0C424FE453E00AB8FDD /* BaseViewController.swift */,
+				2B19D0C824FE464500AB8FDD /* MainViewController.swift */,
 				2B19D08B24FE0AD800AB8FDD /* Main.storyboard */,
 				2B19D08E24FE0AD900AB8FDD /* Assets.xcassets */,
 				2B19D09024FE0AD900AB8FDD /* LaunchScreen.storyboard */,
 				2B19D09324FE0AD900AB8FDD /* Info.plist */,
+				2B19D0CA24FE6DE300AB8FDD /* ProductListHorizontalCollectionViewDataSource.swift */,
 			);
 			path = UICollectionViewExample;
 			sourceTree = "<group>";
@@ -158,6 +169,7 @@
 				2B19D0BA24FE23FE00AB8FDD /* ProductCollectionViewCell.xib */,
 				2B19D0BF24FE3A7500AB8FDD /* ListProductCollectionViewCell.swift */,
 				2B19D0C024FE3A7500AB8FDD /* ListProductCollectionViewCell.xib */,
+				2B19D0C624FE455B00AB8FDD /* BaseCollectionViewCell.swift */,
 			);
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
@@ -297,11 +309,15 @@
 			files = (
 				2B19D0B724FE0B8200AB8FDD /* ProductItem.swift in Sources */,
 				2B19D0BE24FE354D00AB8FDD /* ListProduct.swift in Sources */,
+				2B19D0CB24FE6DE300AB8FDD /* ProductListHorizontalCollectionViewDataSource.swift in Sources */,
+				2B19D0C724FE455B00AB8FDD /* BaseCollectionViewCell.swift in Sources */,
 				2B19D08A24FE0AD800AB8FDD /* ViewController.swift in Sources */,
 				2B19D0BB24FE23FE00AB8FDD /* ProductCollectionViewCell.swift in Sources */,
 				2B19D08624FE0AD800AB8FDD /* AppDelegate.swift in Sources */,
+				2B19D0C524FE453E00AB8FDD /* BaseViewController.swift in Sources */,
 				2B19D08824FE0AD800AB8FDD /* SceneDelegate.swift in Sources */,
 				2B19D0C124FE3A7500AB8FDD /* ListProductCollectionViewCell.swift in Sources */,
+				2B19D0C924FE464500AB8FDD /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

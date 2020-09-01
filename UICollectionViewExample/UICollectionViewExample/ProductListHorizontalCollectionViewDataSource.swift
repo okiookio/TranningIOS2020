@@ -1,5 +1,5 @@
 //
-//  ListProductCollectionViewCell.swift
+//  HorizontalCollectionViewDataSource.swift
 //  UICollectionViewExample
 //
 //  Created by helIgate on 9/1/20.
@@ -8,17 +8,19 @@
 
 import UIKit
 
-class ListProductCollectionViewCell: BaseCollectionViewCell {
-    @IBOutlet weak var collectionView: UICollectionView!
+class ProductListHorizontalCollectionViewDataSource: NSObject {
+    private weak var collectionView: UICollectionView! {
+        didSet {
+            configSubsView()
+        }
+    }
+
+    init(collectionView: UICollectionView) {
+        self.collectionView = collectionView
+    }
+
     private var itemProduct: [ProductItemProtocol] = []
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-        configSubsView()
-        
-    }
-    
     private func configSubsView() {
         collectionView.register(UINib(nibName: "ProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "productCell")
 
@@ -33,19 +35,19 @@ class ListProductCollectionViewCell: BaseCollectionViewCell {
         collectionView.dataSource = self
 
     }
-    
+
     private var spacingSection: CGFloat = 8.0
     private var spacingCell: CGFloat = 8.0
     private var cellRatio: CGFloat = 338 / 289
 
-    override func bind(data: Any) {
+    func bind(data: Any) {
         let data = data as? [ProductItemProtocol]
         self.itemProduct = data ?? []
         collectionView.reloadData()
     }
 }
 
-extension ListProductCollectionViewCell: UICollectionViewDataSource {
+extension ProductListHorizontalCollectionViewDataSource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return itemProduct.count
     }
@@ -60,7 +62,7 @@ extension ListProductCollectionViewCell: UICollectionViewDataSource {
 
 }
 
-extension ListProductCollectionViewCell: UICollectionViewDelegateFlowLayout {
+extension ProductListHorizontalCollectionViewDataSource: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height = collectionView.frame.height - spacingSection * 2
@@ -82,6 +84,6 @@ extension ListProductCollectionViewCell: UICollectionViewDelegateFlowLayout {
 
 }
 
-extension ListProductCollectionViewCell: UICollectionViewDelegate {
+extension ProductListHorizontalCollectionViewDataSource: UICollectionViewDelegate {
 
 }
