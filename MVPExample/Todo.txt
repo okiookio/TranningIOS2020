@@ -1,0 +1,11 @@
+//
+//  Todo.txt
+//  MVPExample
+//
+//  Created by helIgate on 9/3/20.
+//  Copyright © 2020 helIgate. All rights reserved.
+//
+
+- 3 Sep, 2020
+1, Custom header UICollectionView
+2, Tìm hiểu mô hình MVC và MVP
