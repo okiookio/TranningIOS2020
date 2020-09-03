@@ -42,10 +42,4 @@ extension ListProduct {
                            thankYouGift: ThankYouGiftItem.genericRamdom())
     }
 }
-import UIKit
-extension UIImageView {
-    func loadImage(with url: String?) {
-        //TODO: need update: Load image 
-        image = UIImage(named: "image" )
-    }
-}
+

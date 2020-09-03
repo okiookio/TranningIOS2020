@@ -58,6 +58,7 @@ extension ProductItemProtocol {
         for i in 0...count {
             var product = T.init()
             product.id = i
+            product.thumbnail = "https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg"
             product.name = String.random(10)
             product.description = String.random(50)
             product.price = Int.random(from: 1, to: 100000)
@@ -81,38 +82,15 @@ extension ProductItemProtocol {
     }
     
     func displayPrice() -> String? {
-//        return price
         //TODO: need update: Format number to currency
-        return "10,000 JPY"
-    }
-}
-
-extension String {
-    static func random(_ n: Int) -> String
-    {
-        let digits = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-        var result = ""
-
-        for _ in 0..<n {
-            result += String(digits.randomElement()!)
+        guard let priceNumber = price else { return "0.00 JPY" }
+        let formatter = NumberFormatter()
+        formatter.locale = Locale(identifier: "ja_JP")
+        formatter.numberStyle = .currency
+        formatter.currencySymbol = ""
+        guard let formattedPrice = formatter.string(from: priceNumber as NSNumber) else {
+            return "0.00 JPY"
         }
-
-        return result
-    }
-}
-
-extension Int {
-    static func random(from: Int, to: Int) -> Int {
-        return Int.random(in: from...to)
-    }
-}
-
-import UIKit
-extension UIColor {
-    static var random: UIColor {
-        return UIColor(red: .random(in: 0...1),
-                       green: .random(in: 0...1),
-                       blue: .random(in: 0...1),
-                       alpha: 1.0)
+        return "\(formattedPrice) JPY"
     }
 }

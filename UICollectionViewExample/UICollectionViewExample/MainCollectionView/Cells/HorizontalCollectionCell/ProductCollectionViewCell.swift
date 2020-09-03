@@ -16,7 +16,7 @@ class ProductCollectionViewCell: BaseCollectionViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
-    private let kCellRadius: CGFloat = 20
+    private let kCellRadius: CGFloat = 10
     
     override func awakeFromNib() {
         super.awakeFromNib()

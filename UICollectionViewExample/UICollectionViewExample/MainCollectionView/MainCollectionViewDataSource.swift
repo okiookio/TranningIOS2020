@@ -6,15 +6,13 @@
 //  Copyright © 2020 helIgate. All rights reserved.
 //
 
+//https://qiita.com/akatsuki174/items/626fe4d71990694f946f#xib%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%83%98%E3%83%83%E3%83%80%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B
+
 import UIKit
 
 class MainCollectionViewDataSource: NSObject {
     private weak var collectionView: UICollectionView!
 
-    
-    
-    
-    
     init(collectionView: UICollectionView,
          spacingSection: CGFloat = 8,
          spacingRow: CGFloat = 8) {
@@ -28,6 +26,7 @@ class MainCollectionViewDataSource: NSObject {
 
     private func configSubviews() {
         collectionView.register(UINib(nibName: "ListProductCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ListProductCollectionViewCell")
+        collectionView.register(UINib(nibName: "MainCollectionHeader", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "MainCollectionHeader")
         collectionView.backgroundColor = .white
 
         collectionView.dataSource = self
@@ -86,6 +85,7 @@ class MainCollectionViewDataSource: NSObject {
     var didSelectFoodAndDrinkItem: ((FoodAndDrinkItem) -> Void)?
     var didSelectThankYouGiftItem: ((ThankYouGiftItem) -> Void)?
 
+    var didTouchReadMore: ((_ indexSection: Int) -> Void)?
 }
 
 extension MainCollectionViewDataSource: UICollectionViewDataSource {
@@ -95,6 +95,27 @@ extension MainCollectionViewDataSource: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+
+        let title = MainSection(rawValue: indexPath.section)?.sectionTitle
+
+        if kind == UICollectionView.elementKindSectionHeader {
+            guard let headerMainCollection = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "MainCollectionHeader", for: indexPath) as? MainCollectionHeader else { return UICollectionReusableView() }
+            headerMainCollection.bind(title: title)
+            headerMainCollection.didTouchReadMore = { [weak self] in
+                self?.didTouchReadMore?(indexPath.section)
+            }
+            return headerMainCollection
+        }
+        return UICollectionReusableView()
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        let with = collectionView.frame.width - spacingSection * 2
+        let height: CGFloat = 50
+        return CGSize(width: with, height: height)
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -93,3 +93,9 @@ extension ProductListHorizontalCollectionViewDataSource: UICollectionViewDelegat
         didSelectAt?(indexPath, item)
     }
 }
+
+extension UIEdgeInsets {
+    static func create(all: CGFloat) -> UIEdgeInsets {
+        return .init(top: all, left: all, bottom: all, right: all)
+    }
+}
