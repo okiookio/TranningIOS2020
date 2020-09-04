@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-MVPParseJson-MVPParseJsonUITests/Pods-MVPParseJson-MVPParseJsonUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework

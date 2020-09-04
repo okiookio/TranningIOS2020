@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1dx-OY-Kkf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVPParseJson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogS-nT-gd4">
+                                <rect key="frame" x="285" y="266" width="66" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="m2f-Ux-rgn"/>
+                                </constraints>
+                                <state key="normal" title="Alamofire"/>
+                                <connections>
+                                    <action selector="goToAlamofire:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F8u-WO-QK1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoE-Av-hfw">
+                                <rect key="frame" x="69" y="266" width="99" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="eP9-KB-e1c"/>
+                                </constraints>
+                                <state key="normal" title="Codable"/>
+                                <connections>
+                                    <action selector="goToCodable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFE-H6-KGs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ogS-nT-gd4" firstAttribute="leading" secondItem="SoE-Av-hfw" secondAttribute="trailing" constant="117" id="BEA-cM-Ni0"/>
+                            <constraint firstItem="SoE-Av-hfw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="178" id="CN8-pc-1is"/>
+                            <constraint firstItem="ogS-nT-gd4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="178" id="PeX-ZM-k7h"/>
+                            <constraint firstItem="SoE-Av-hfw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="RpR-ab-wRn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ogS-nT-gd4" secondAttribute="trailing" constant="63" id="c0p-W4-gYK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="O9K-Gl-8mZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Codable View Controller-->
+        <scene sceneID="0g1-Nj-FQh">
+            <objects>
+                <viewController storyboardIdentifier="CodableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yco-dM-an2" customClass="CodableViewController" customModule="MVPParseJson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ubm-tC-WDt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONh-Lf-nSe">
+                                <rect key="frame" x="153" y="258" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Request all user"/>
+                                <connections>
+                                    <action selector="requestButton:" destination="yco-dM-an2" eventType="touchUpInside" id="4IN-I7-COD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXl-aE-dHv">
+                                <rect key="frame" x="156" y="335" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Request a user"/>
+                                <connections>
+                                    <action selector="requestButton:" destination="yco-dM-an2" eventType="touchUpInside" id="jyQ-SP-41L"/>
+                                    <action selector="requestUser:" destination="yco-dM-an2" eventType="touchUpInside" id="hDg-Rc-f1f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="iLD-e3-9tq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXV-Ur-yOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800.0000000000002" y="142.63392857142856"/>
+        </scene>
+        <!--Alamofire View Controller-->
+        <scene sceneID="dxM-B2-p6f">
+            <objects>
+                <viewController storyboardIdentifier="AlamofireViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4sP-Ot-FLv" customClass="AlamofireViewController" customModule="MVPParseJson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b7z-Bu-9Qu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7x-m7-PyS">
+                                <rect key="frame" x="193" y="261" width="57" height="30"/>
+                                <state key="normal" title="Request"/>
+                                <connections>
+                                    <action selector="requestButton:" destination="4sP-Ot-FLv" eventType="touchUpInside" id="eeG-ej-GXo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="p7x-m7-PyS" firstAttribute="top" secondItem="lhQ-pr-7Yv" secondAttribute="top" constant="217" id="AJ1-fA-HIx"/>
+                            <constraint firstItem="p7x-m7-PyS" firstAttribute="leading" secondItem="lhQ-pr-7Yv" secondAttribute="leading" constant="193" id="VYf-kX-JlS"/>
+                            <constraint firstItem="lhQ-pr-7Yv" firstAttribute="trailing" secondItem="p7x-m7-PyS" secondAttribute="trailing" constant="164" id="kmE-i1-8na"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lhQ-pr-7Yv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nQ-KB-iSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2513.04347826087" y="140.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="680-BQ-6vM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1dx-OY-Kkf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EPS-pI-74z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zet-vu-avf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipk-VH-EKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

@@ -25,6 +25,7 @@ class Presenter: PresenterProtocol {
     init(delegate: MVPViewControllerProtocol) {
         self.delegate = delegate
     }
+    
     func searchAgeByName() {
         if let name = delegate?.getName() {
             searchAgeOf(name: name)

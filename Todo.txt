@@ -1,0 +1,7 @@
+Todo.txt
+
+- 4th Sep, 2020
+1, Resquest API
++ URL request 
++ Alamorefire
++ Codable parse json

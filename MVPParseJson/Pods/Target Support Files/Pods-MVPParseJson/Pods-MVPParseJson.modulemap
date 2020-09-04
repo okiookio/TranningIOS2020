@@ -1,0 +1,6 @@
+framework module Pods_MVPParseJson {
+  umbrella header "Pods-MVPParseJson-umbrella.h"
+
+  export *
+  module * { export * }
+}
