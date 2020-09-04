@@ -2,6 +2,9 @@
 For Toi
 
 date: Aug 17th, 2020
+- 4 Sep, 2020
+1, Tìm hiểu parse json bằng codable
+2, Tìm hiểu call API bằng thư viện Alamofire
 
 - 3 Sep, 2020
 1, Custom header UICollectionView
