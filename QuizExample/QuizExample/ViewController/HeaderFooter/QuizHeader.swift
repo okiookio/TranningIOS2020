@@ -19,7 +19,7 @@ class QuizHeader: UITableViewHeaderFooterView {
         super.awakeFromNib()
         
         let view = UIView(frame: self.frame)
-        view.backgroundColor = .lightGray
+        view.backgroundColor = .white
         backgroundView = view
     }
     
