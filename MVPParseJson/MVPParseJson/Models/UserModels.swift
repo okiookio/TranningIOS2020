@@ -8,9 +8,15 @@
 
 import Foundation
 
+enum Gender: String, Codable {
+    case male
+    case female
+}
+
 struct UserModel: Codable {
     var id: String?
     var createdAt: String?
     var name: String?
     var avatar: URL?
+    var gender: Bool?
 }

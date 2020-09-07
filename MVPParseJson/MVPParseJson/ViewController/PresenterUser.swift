@@ -16,7 +16,7 @@ protocol PresenterUserDelegate: class, ProgressHUB, DisplayDialogProtocol {
 protocol PresenterUserProtocol {
     var delegate: PresenterUserDelegate? { get set }
     func getListUser()
-    func getUser()
+    func getUser(by id: Int)
 }
 
 class PresenterUser: PresenterUserProtocol {
@@ -40,9 +40,9 @@ class PresenterUser: PresenterUserProtocol {
             }
         }
     }
-    
-    func getUser() {
-        guard let url = URL(string: "https://5f51a0b25e98480016123baf.mockapi.io/v1/users") else { return }
+
+    func getUser(by id: Int) {
+        guard let url = URL(string: "https://5f51a0b25e98480016123baf.mockapi.io/v1/users/\(id)") else { return }
         delegate?.showProgress()
         APIAlamofire.shared.request(url: url) { [weak self] (response: UserModel?, error: String?) in
             guard let self = self else { return }

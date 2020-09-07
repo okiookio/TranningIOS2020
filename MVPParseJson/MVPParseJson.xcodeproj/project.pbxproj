@@ -205,7 +205,6 @@
 		2BD2C3372501DEA5009BD5C8 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				2BD2C3382501DEF2009BD5C8 /* PresenterUser.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -215,6 +214,7 @@
 			children = (
 				2BD2C3052501D709009BD5C8 /* ViewController.swift */,
 				2BD7CBD7250214FA00CBD575 /* CodableViewController.swift */,
+				2BD2C3382501DEF2009BD5C8 /* PresenterUser.swift */,
 				2BD7CBD92502163E00CBD575 /* AlamofireViewController.swift */,
 			);
 			path = ViewController;

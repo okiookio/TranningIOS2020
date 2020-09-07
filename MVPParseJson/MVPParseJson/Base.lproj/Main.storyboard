@@ -60,27 +60,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONh-Lf-nSe">
-                                <rect key="frame" x="153" y="258" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Request all user"/>
-                                <connections>
-                                    <action selector="requestButton:" destination="yco-dM-an2" eventType="touchUpInside" id="4IN-I7-COD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXl-aE-dHv">
-                                <rect key="frame" x="156" y="335" width="103" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Request a user"/>
-                                <connections>
-                                    <action selector="requestButton:" destination="yco-dM-an2" eventType="touchUpInside" id="jyQ-SP-41L"/>
-                                    <action selector="requestUser:" destination="yco-dM-an2" eventType="touchUpInside" id="hDg-Rc-f1f"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nmC-bB-LGu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nmC-bB-LGu" firstAttribute="top" secondItem="iLD-e3-9tq" secondAttribute="top" id="EDH-Re-Ais"/>
+                            <constraint firstItem="nmC-bB-LGu" firstAttribute="leading" secondItem="iLD-e3-9tq" secondAttribute="leading" id="YoH-ty-xu4"/>
+                            <constraint firstItem="iLD-e3-9tq" firstAttribute="trailing" secondItem="nmC-bB-LGu" secondAttribute="trailing" id="fTd-Pe-dwZ"/>
+                            <constraint firstItem="iLD-e3-9tq" firstAttribute="bottom" secondItem="nmC-bB-LGu" secondAttribute="bottom" id="zX6-U6-Axm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iLD-e3-9tq"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="nmC-bB-LGu" id="ERF-aL-TgW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXV-Ur-yOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
