@@ -2,6 +2,11 @@
 For Toi
 
 date: Aug 17th, 2020
+- 7 Sep, 2020
+1, Xây dụng màn hình Quiz trắc nghiệm bằng UItableView
+2, Xây dựng màn hình My profile của ứng ụng FNet
+
+
 - 4 Sep, 2020
 1, Tìm hiểu parse json bằng codable
 2, Tìm hiểu call API bằng thư viện Alamofire
