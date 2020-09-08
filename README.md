@@ -2,6 +2,10 @@
 For Toi
 
 date: Aug 17th, 2020
+- 8 Sep, 2020
+1, Fix màn hình My profile
+2, Xây dựng màn hình Settings FNET
+
 - 7 Sep, 2020
 1, Xây dụng màn hình Quiz trắc nghiệm bằng UItableView
 2, Xây dựng màn hình My profile của ứng ụng FNet
