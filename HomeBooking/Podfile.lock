@@ -1,24 +1,32 @@
 PODS:
   - IQKeyboardManagerSwift (6.5.6)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
   - SwiftDate (6.1.0)
   - WSTagsField (5.4.0)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - R.swift
   - SwiftDate
   - WSTagsField
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManagerSwift
+    - R.swift
+    - R.swift.Library
     - SwiftDate
     - WSTagsField
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
   SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
   WSTagsField: a4e91b7d866e8c9755332ebcf8123f42f2abd4a0
 
-PODFILE CHECKSUM: 429463cdeed630c0b24bc295bb02955c48d6c298
+PODFILE CHECKSUM: f9175f6c3d462829ac7405cc00df82a20b13b345
 
 COCOAPODS: 1.9.3

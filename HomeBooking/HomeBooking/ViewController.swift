@@ -16,18 +16,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
-//        let orderFunctions = HBHigherOrderFunctions.share
-//        orderFunctions.map()
-//        orderFunctions.compactMap()
-//        orderFunctions.filter()
-//        orderFunctions.reduce()
-//        print(orderFunctions.contains())
-//        orderFunctions.removeAll()
-//        orderFunctions.sorted()
-//        orderFunctions.split()
-//        orderFunctions.allSatisfy()
-//        orderFunctions.partition()
-//        orderFunctions.firstIndex()
         
     }
 
@@ -48,6 +36,7 @@ class ViewController: UIViewController {
         }
         navigationController?.pushViewController(hbFilterViewController, animated: true)
     }
+    
     @IBAction func goToCheckout(_ sender: UIButton) {
         let storybroad: UIStoryboard = UIStoryboard(name: "HBCheckout", bundle: nil)
         let hbcheckout1ViewController = storybroad.instantiateViewController(withIdentifier: "HBCheckout1") as! HBCheckout1ViewController
@@ -58,11 +47,13 @@ class ViewController: UIViewController {
         hbcheckout1ViewController.bindDataCheckout(checkout)
         navigationController?.pushViewController(hbcheckout1ViewController, animated: true)
     }
+    
     @IBAction func goToUser(_ sender: UIButton) {
         let storybroad: UIStoryboard = UIStoryboard(name: "HBUser", bundle: nil)
         let hbUserViewController = storybroad.instantiateViewController(identifier: "UserController") as! HBUserViewController
         navigationController?.pushViewController(hbUserViewController, animated: true)
     }
+    
     @IBAction func goToCheckout2(_ sender: UIButton) {
         let storybroad: UIStoryboard = UIStoryboard(name: "HBCheckout2", bundle: nil)
         let hbCheckout2ViewController = storybroad.instantiateViewController(identifier:          "HBCheckout2") as! HBCheckout2ViewController
@@ -93,6 +84,7 @@ class ViewController: UIViewController {
             navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
     @IBAction func goToNotice() {
         let storybroad: UIStoryboard = UIStoryboard(name: "HBNotice", bundle: nil)
         let vc = storybroad.instantiateViewController(identifier: "HBNotice") as! HBNoticeViewController

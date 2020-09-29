@@ -7,6 +7,7 @@ target 'HomeBooking' do
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftDate'
   pod 'WSTagsField'
+  pod 'R.swift'
   # Pods for HomeBooking
 
 end

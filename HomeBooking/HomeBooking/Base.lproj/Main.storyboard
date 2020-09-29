@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0NB-Dk-2gd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gki-NU-0I2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -99,7 +100,171 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+            <point key="canvasLocation" x="899" y="139"/>
+        </scene>
+        <!--Main Tabbar View Controller-->
+        <scene sceneID="L9Z-9i-UA9">
+            <objects>
+                <viewController id="0Ib-Hi-RPz" customClass="HBMainTabbarViewController" customModule="HomeBooking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PnL-UM-kpt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFN-5R-YZc">
+                                <rect key="frame" x="0.0" y="798" width="414" height="64"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A0G-Gu-STN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgz-lK-BMk">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="64"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofv-Pc-W7H" customClass="HBTabbarButton" customModule="HomeBooking" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="8" width="87.5" height="48"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" name="orange"/>
+                                                        <state key="normal" image="home"/>
+                                                        <connections>
+                                                            <action selector="didTouchTabbarAt:" destination="0Ib-Hi-RPz" eventType="touchUpInside" id="xS0-mU-nnN"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ofv-Pc-W7H" secondAttribute="bottom" constant="8" id="7P9-dr-GdS"/>
+                                                    <constraint firstItem="ofv-Pc-W7H" firstAttribute="top" secondItem="sgz-lK-BMk" secondAttribute="top" constant="8" id="Nuv-8m-Jdz"/>
+                                                    <constraint firstItem="ofv-Pc-W7H" firstAttribute="leading" secondItem="sgz-lK-BMk" secondAttribute="leading" constant="8" id="e5f-OI-4jD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ofv-Pc-W7H" secondAttribute="trailing" constant="8" id="tx4-cB-HrW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VrN-fw-H4u">
+                                                <rect key="frame" x="103.5" y="0.0" width="103.5" height="64"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn7-co-ROp" customClass="HBTabbarButton" customModule="HomeBooking" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="8" width="87.5" height="48"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" name="orange"/>
+                                                        <state key="normal" image="search"/>
+                                                        <connections>
+                                                            <action selector="didTouchTabbarAt:" destination="0Ib-Hi-RPz" eventType="touchUpInside" id="dIh-Yf-DGR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="mn7-co-ROp" firstAttribute="top" secondItem="VrN-fw-H4u" secondAttribute="top" constant="8" id="2ti-tF-5hG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mn7-co-ROp" secondAttribute="bottom" constant="8" id="B7h-M6-vby"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mn7-co-ROp" secondAttribute="trailing" constant="8" id="PVT-CM-Qfa"/>
+                                                    <constraint firstItem="mn7-co-ROp" firstAttribute="leading" secondItem="VrN-fw-H4u" secondAttribute="leading" constant="8" id="Tsy-Vx-ab4"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vwb-61-dcO">
+                                                <rect key="frame" x="207" y="0.0" width="103.5" height="64"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gi-Nl-YOe" customClass="HBTabbarButton" customModule="HomeBooking" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="8" width="87.5" height="48"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" name="orange"/>
+                                                        <state key="normal" image="bell"/>
+                                                        <connections>
+                                                            <action selector="didTouchTabbarAt:" destination="0Ib-Hi-RPz" eventType="touchUpInside" id="0X7-rJ-SvB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="3Gi-Nl-YOe" firstAttribute="top" secondItem="vwb-61-dcO" secondAttribute="top" constant="8" id="GYg-Pa-JKp"/>
+                                                    <constraint firstItem="3Gi-Nl-YOe" firstAttribute="leading" secondItem="vwb-61-dcO" secondAttribute="leading" constant="8" id="Y9r-Bi-PMi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3Gi-Nl-YOe" secondAttribute="trailing" constant="8" id="dcM-03-q3v"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3Gi-Nl-YOe" secondAttribute="bottom" constant="8" id="z7t-LK-wH1"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57W-kG-qBS">
+                                                <rect key="frame" x="310.5" y="0.0" width="103.5" height="64"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8t-2b-iLU" customClass="HBTabbarButton" customModule="HomeBooking" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="8" width="87.5" height="48"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" name="orange"/>
+                                                        <state key="normal" image="user"/>
+                                                        <connections>
+                                                            <action selector="didTouchTabbarAt:" destination="0Ib-Hi-RPz" eventType="touchUpInside" id="hU3-U1-v7b"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="j8t-2b-iLU" firstAttribute="top" secondItem="57W-kG-qBS" secondAttribute="top" constant="8" id="3QY-Eg-HbU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="j8t-2b-iLU" secondAttribute="trailing" constant="8" id="Usj-Gu-G55"/>
+                                                    <constraint firstItem="j8t-2b-iLU" firstAttribute="leading" secondItem="57W-kG-qBS" secondAttribute="leading" constant="8" id="cTl-L0-MZj"/>
+                                                    <constraint firstAttribute="bottom" secondItem="j8t-2b-iLU" secondAttribute="bottom" constant="8" id="vcL-Zj-6yE"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="A0G-Gu-STN" firstAttribute="leading" secondItem="KFN-5R-YZc" secondAttribute="leading" id="6Dp-aC-dU4"/>
+                                    <constraint firstAttribute="trailing" secondItem="A0G-Gu-STN" secondAttribute="trailing" id="Anh-yj-Dm7"/>
+                                    <constraint firstAttribute="bottom" secondItem="A0G-Gu-STN" secondAttribute="bottom" id="Gdu-5H-ncH"/>
+                                    <constraint firstItem="A0G-Gu-STN" firstAttribute="top" secondItem="KFN-5R-YZc" secondAttribute="top" id="jqn-RJ-LrJ"/>
+                                    <constraint firstAttribute="height" constant="64" id="uu8-Ai-w3N"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Poc-CI-zLi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="798"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KFN-5R-YZc" firstAttribute="top" secondItem="Poc-CI-zLi" secondAttribute="bottom" id="3Oq-RF-uAI"/>
+                            <constraint firstItem="7wl-Gy-fBR" firstAttribute="trailing" secondItem="Poc-CI-zLi" secondAttribute="trailing" id="OkE-U6-fbi"/>
+                            <constraint firstItem="Poc-CI-zLi" firstAttribute="top" secondItem="PnL-UM-kpt" secondAttribute="top" id="Thv-bW-cDD"/>
+                            <constraint firstItem="Poc-CI-zLi" firstAttribute="leading" secondItem="7wl-Gy-fBR" secondAttribute="leading" id="YXG-zo-sII"/>
+                            <constraint firstItem="7wl-Gy-fBR" firstAttribute="bottom" secondItem="KFN-5R-YZc" secondAttribute="bottom" id="nFf-u1-ILe"/>
+                            <constraint firstItem="KFN-5R-YZc" firstAttribute="leading" secondItem="7wl-Gy-fBR" secondAttribute="leading" id="nh0-X0-Ra1"/>
+                            <constraint firstItem="KFN-5R-YZc" firstAttribute="trailing" secondItem="7wl-Gy-fBR" secondAttribute="trailing" id="wWl-9N-Y5o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7wl-Gy-fBR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VJB-iF-Oqf"/>
+                    <connections>
+                        <outlet property="containerView" destination="Poc-CI-zLi" id="1cJ-T0-fxp"/>
+                        <outletCollection property="tabbarButtons" destination="ofv-Pc-W7H" collectionClass="NSMutableArray" id="hfU-7h-aOA"/>
+                        <outletCollection property="tabbarButtons" destination="mn7-co-ROp" collectionClass="NSMutableArray" id="Eai-HT-odc"/>
+                        <outletCollection property="tabbarButtons" destination="3Gi-Nl-YOe" collectionClass="NSMutableArray" id="axb-ch-49P"/>
+                        <outletCollection property="tabbarButtons" destination="j8t-2b-iLU" collectionClass="NSMutableArray" id="byL-SB-Lpu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDe-kA-VHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2744.9275362318845" y="144.64285714285714"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lKF-Cq-dEQ">
+            <objects>
+                <tabBarController id="4LD-mS-w8G" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UHJ-aQ-k0c"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wgt-CZ-i8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFa-ki-MD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3570" y="145"/>
+        </scene>
+        <!--HBUser-->
+        <scene sceneID="vdz-tl-nMb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HBUser" id="Gnv-3c-Axg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LP6-GF-dRS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ESu-iA-JNF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4038" y="-124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iOO-f2-3da">
@@ -119,5 +284,32 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2hq-23-tGu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gki-NU-0I2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mZz-V6-g6y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0Ib-Hi-RPz" kind="relationship" relationship="rootViewController" id="wK5-HM-3rn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HfO-BF-gJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957" y="145"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="bell" width="21" height="24"/>
+        <image name="home" width="57" height="51"/>
+        <image name="search" width="24" height="24"/>
+        <image name="user" width="21" height="24"/>
+        <namedColor name="orange">
+            <color red="0.97254901960784312" green="0.63137254901960782" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

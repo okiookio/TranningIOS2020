@@ -22,6 +22,9 @@
 		2B52D7EF24F5012F00D8FF1A /* HBUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D7ED24F5012F00D8FF1A /* HBUserTableViewCell.xib */; };
 		2B52D7F324F51F3500D8FF1A /* HBCheckout2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B52D7F224F51F3500D8FF1A /* HBCheckout2.storyboard */; };
 		2B52D7F724F5210500D8FF1A /* HBCheckout2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52D7F624F5210500D8FF1A /* HBCheckout2ViewController.swift */; };
+		2B78AA9F251C541C0074E363 /* HBMainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B78AA9E251C541C0074E363 /* HBMainTabbarViewController.swift */; };
+		2B78AAA1251C56590074E363 /* HBTabbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B78AAA0251C56590074E363 /* HBTabbarButton.swift */; };
+		2B78AAA4251C5E180074E363 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B78AAA3251C5E170074E363 /* R.generated.swift */; };
 		2B81311324F8F73E00C786DF /* HBNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B81311224F8F73E00C786DF /* HBNotice.swift */; };
 		2BA2ECD024F7A2FA009512BB /* HBNotice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA2ECCF24F7A2FA009512BB /* HBNotice.storyboard */; };
 		2BA2ECD224F7A359009512BB /* HBNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA2ECD124F7A359009512BB /* HBNoticeViewController.swift */; };
@@ -79,6 +82,9 @@
 		2B52D7ED24F5012F00D8FF1A /* HBUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HBUserTableViewCell.xib; sourceTree = "<group>"; };
 		2B52D7F224F51F3500D8FF1A /* HBCheckout2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBCheckout2.storyboard; sourceTree = "<group>"; };
 		2B52D7F624F5210500D8FF1A /* HBCheckout2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBCheckout2ViewController.swift; sourceTree = "<group>"; };
+		2B78AA9E251C541C0074E363 /* HBMainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBMainTabbarViewController.swift; sourceTree = "<group>"; };
+		2B78AAA0251C56590074E363 /* HBTabbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBTabbarButton.swift; sourceTree = "<group>"; };
+		2B78AAA3251C5E170074E363 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		2B81311224F8F73E00C786DF /* HBNotice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBNotice.swift; sourceTree = "<group>"; };
 		2BA2ECCF24F7A2FA009512BB /* HBNotice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HBNotice.storyboard; sourceTree = "<group>"; };
 		2BA2ECD124F7A359009512BB /* HBNoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HBNoticeViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +190,15 @@
 			path = ScreenCheckout2;
 			sourceTree = "<group>";
 		};
+		2B78AA9D251C53900074E363 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2B78AA9E251C541C0074E363 /* HBMainTabbarViewController.swift */,
+				2B78AAA0251C56590074E363 /* HBTabbarButton.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
 		2BA2ECCE24F7A2BF009512BB /* ScreenNotification */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +285,7 @@
 		2BEA193F24EF611C00A26CF9 /* HomeBooking */ = {
 			isa = PBXGroup;
 			children = (
+				2B78AA9D251C53900074E363 /* MainTabBar */,
 				2BD3FA2724FCD49C0022706D /* UICollectionView */,
 				2BA2ECCE24F7A2BF009512BB /* ScreenNotification */,
 				2B52D7F024F51F0000D8FF1A /* ScreenCheckout2 */,
@@ -286,6 +302,7 @@
 				2BEA194624EF611C00A26CF9 /* Main.storyboard */,
 				2BEA194924EF611F00A26CF9 /* Assets.xcassets */,
 				2BEA194B24EF611F00A26CF9 /* LaunchScreen.storyboard */,
+				2B78AAA3251C5E170074E363 /* R.generated.swift */,
 				2BEA194E24EF611F00A26CF9 /* Info.plist */,
 			);
 			path = HomeBooking;
@@ -360,6 +377,7 @@
 			buildConfigurationList = 2BEA195124EF611F00A26CF9 /* Build configuration list for PBXNativeTarget "HomeBooking" */;
 			buildPhases = (
 				FF10B57254D69F8579B5F101 /* [CP] Check Pods Manifest.lock */,
+				2B78AAA2251C5C7E0074E363 /* ShellScript */,
 				2BEA193924EF611C00A26CF9 /* Sources */,
 				2BEA193A24EF611C00A26CF9 /* Frameworks */,
 				2BEA193B24EF611C00A26CF9 /* Resources */,
@@ -439,6 +457,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2B78AAA2251C5C7E0074E363 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		A09033CD823D39C39A79D6E1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -490,6 +527,7 @@
 				2BEA194524EF611C00A26CF9 /* ViewController.swift in Sources */,
 				2BEA195624EF61B300A26CF9 /* HBFilter.swift in Sources */,
 				2B1BB0A724F4B8960074ED6B /* HBInputNumberTableViewCell.swift in Sources */,
+				2B78AAA1251C56590074E363 /* HBTabbarButton.swift in Sources */,
 				2BA2ECDA24F7A7E1009512BB /* HBNoticeHeaderTableViewCell.swift in Sources */,
 				2BD3FA2F24FCD6E00022706D /* HBCollectionViewCell.swift in Sources */,
 				2BA2ECD624F7A40E009512BB /* HBNoticeTableViewCell.swift in Sources */,
@@ -501,10 +539,12 @@
 				2BEA194324EF611C00A26CF9 /* SceneDelegate.swift in Sources */,
 				2B1BB0A024F4A8F00074ED6B /* HBPaddingTextField.swift in Sources */,
 				2BA972AB24F2172400419967 /* Checkout1TableViewCell.swift in Sources */,
+				2B78AA9F251C541C0074E363 /* HBMainTabbarViewController.swift in Sources */,
 				2BEA196D24EFCAD300A26CF9 /* SwichTableViewCell.swift in Sources */,
 				2B19A0AA24FC987900140EA8 /* HBHigherOrderFunctions.swift in Sources */,
 				2BEA196924EFCAAF00A26CF9 /* SelectedTableViewCell.swift in Sources */,
 				2BEA196324EFCA3A00A26CF9 /* HBFilterViewController.swift in Sources */,
+				2B78AAA4251C5E180074E363 /* R.generated.swift in Sources */,
 				2B1A638024F8A84B0023422F /* CodableExample.swift in Sources */,
 				2BA2ECE624F7DDB5009512BB /* GenericXXX.swift in Sources */,
 				2B81311324F8F73E00C786DF /* HBNotice.swift in Sources */,
